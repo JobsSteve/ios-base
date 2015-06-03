@@ -121,3 +121,45 @@ Magical Record **Update** entity.
     self.notificationTimerTextField.text = settings.notifySetTimer;
     self.notificationEmailTextField.text = settings.userEmail;
 ```
+
+
+```objc
+DBOrder *oldOrder = [DBOrder MR_findFirst];
+         if (oldOrder){
+             [oldOrder MR_deleteEntity];
+         }
+         
+         //DBOrder
+         DBOrder *order = [DBOrder MR_createEntity];
+         
+         order.b_ofertaId = @([[responseObject objectForKey:@"oferta_id"] integerValue]);
+        
+         NSDictionary *orderDict = [responseObject objectForKey:@"order"];
+         order.b_orderId = @([[orderDict objectForKey:@"order_id"] integerValue]);
+         
+         NSArray *productArr = [orderDict objectForKey:@"products"];
+         order.b_productId = @([[productArr[0] objectForKey:@"product_id"] integerValue]);
+         order.b_cost = @([[productArr[0] objectForKey:@"cost"] integerValue]);
+         order.b_price = @([[productArr[0] objectForKey:@"price"] integerValue]);
+         order.b_total = @([[orderDict objectForKey:@"total"] integerValue]);
+         order.b_count = @([productArr count]);
+         
+         //DBRequiredField
+         NSArray *fields = [responseObject objectForKey:@"required_fields"];
+         
+         for (NSString *field in fields) {
+             DBRequiredField *requiredField = [DBRequiredField MR_createEntity];
+             requiredField.b_field = field;
+             [order addRequiredFieldsObject:requiredField];
+         }
+         
+         NSArray *fs = [DBRequiredField MR_findAll];
+         NSLog(@"fs = %@", fs);
+         
+         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+         
+         for (DBRequiredField *rf in order.requiredFields) {
+             NSLog(@"order = %@", rf.b_field);
+         }
+         
+```
