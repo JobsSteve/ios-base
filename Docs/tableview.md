@@ -83,6 +83,122 @@
 }
 
 
+```objc
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //ORDER ARRAY - для динамического построения ячеек.
+    self.orderArray = [NSMutableArray new];
+    
+    //Создание объектов и добавление в self.orderArray
+    //1.
+    DBOrder *order = self.order;
+    [self.orderArray addObject:order];
+    
+    //2.
+    NSArray *fields = [DBRequiredField MR_findAll];
+    self.fields = [fields mutableCopy];
+    for (DBRequiredField *field in fields) {
+        [self.orderArray addObject:field];
+    }
+    self.fieldsCount = fields.count;
+    
+    //3.
+    NSDictionary *button = @{@"button": @"Перейти к оплате"};
+    [self.orderArray addObject:button];
+    
+    //4.
+    NSDictionary *condition = @{@"condition": @"Я соглашаюсь к условиям"};
+    [self.orderArray addObject:condition];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    
+    [self configureTableView];
+    
+    self.navigationItem.title = @"Оплата";
+}
+
+- (void)configureTableView
+{
+    //Если ячеек немного то позволяет рассчитать длину ячеек автоматически.
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.orderArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //default cell
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    id detectObject = [self.orderArray objectAtIndex:indexPath.row];
+    NSString *className = NSStringFromClass([detectObject class]);
+    
+    if ([className isEqualToString:@"DBOrder"]) {
+        
+        self.paramsCell = [tableView dequeueReusableCellWithIdentifier:@"SHGParamsOrderCell"];
+    
+        self.paramsCell.c_productsLabel.text = [NSString getVerbForFine:self.order.b_countValue];
+        
+        self.paramsCell.c_costLabel.text = [NSString stringWithFormat:@"%@ руб.", self.order.b_cost];
+        NSNumber *comission = @(self.order.b_totalValue - self.order.b_costValue);
+        self.paramsCell.c_comissionLabel.text = [NSString stringWithFormat:@"%@ руб.", comission];
+        self.paramsCell.c_totalLabel.text = [NSString stringWithFormat:@"%@ руб.", self.order.b_total];
+        
+        return self.paramsCell;
+    }
+    
+    else if ([className isEqualToString:@"DBRequiredField"]) {
+        
+        self.fieldCell = [tableView dequeueReusableCellWithIdentifier:@"SHGFieldOrderCell"];
+
+        DBRequiredField *field = [DBRequiredField MR_findFirst];
+        NSLog(@"field = %@", field.b_field);
+        self.fieldCell.c_fieldTextField.placeholder = [NSString getPlaceholder:field.b_field];
+        
+        NSInteger index = indexPath.row; //от 1-го до n
+        
+        self.fieldCell.c_fieldTextField.tag = index;
+        
+        return self.fieldCell;
+    }
+    
+    else if ([className isEqualToString:@"__NSDictionaryI"]) {
+        
+        NSLog(@"detectObject = %@", detectObject);
+        NSDictionary *dict = (NSDictionary *)detectObject;
+        NSArray *keys = [dict allKeys];
+        NSString *key = [keys firstObject];
+        
+        if ([key isEqualToString:@"button"]) {
+            self.buttonCell = [tableView dequeueReusableCellWithIdentifier:@"SHGButtonOrderCell"];
+            [self.buttonCell.c_orderButton addTarget:self
+                                         action:@selector(orderButtonWasPressed:)
+                               forControlEvents:UIControlEventTouchUpInside];
+            return self.buttonCell;
+        }
+        
+        if ([key isEqualToString:@"condition"]) {
+            self.conditionsCell = [tableView dequeueReusableCellWithIdentifier:@"SHGConditionsOrderCell"];
+            [self.conditionsCell.c_conditionsButton addTarget:self
+                                                  action:@selector(conditionsButtonWasPressed:)
+                                        forControlEvents:UIControlEventTouchUpInside];
+            return self.conditionsCell;
+        }
+    }
+    return cell;
+}
+```
+
+
 
 
 
