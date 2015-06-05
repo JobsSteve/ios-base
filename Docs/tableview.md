@@ -83,6 +83,8 @@
 }
 
 
+## Динамическая природа UITableView.
+
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
