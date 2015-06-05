@@ -14,6 +14,8 @@ Select Project in left navigator and select target go to build phase and Put -w 
 
 ![Hide warnings](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/hide_warnings.png)
 
+##Disable Storyboard warnings
 
+I needed to completely restart XCOde for the `interface Builder XIB Compiler - Options` `WARNINGS Flag = NO` the storyboard warnings to be considered!
 
 
