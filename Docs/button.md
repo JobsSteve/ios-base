@@ -99,6 +99,7 @@
 ## 2. Кастомизация кнопки через IB (Interface Builder).
 
 http://www.appcoda.com/ibdesignable-ibinspectable-tutorial/
+
 https://www.weheartswift.com/make-awesome-ui-components-ios-8-using-swift-xcode-6/
 
 * Кейворды: IB_DESIGNABLE и IBInspectable.
