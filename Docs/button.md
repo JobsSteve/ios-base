@@ -107,7 +107,7 @@ https://www.weheartswift.com/make-awesome-ui-components-ios-8-using-swift-xcode-
 * Этот код позволяет менять: цвет рамки, ширину рамки и радиус рамки внутри IB (Shows Attributes Inspector).
 
 ```objc
-//  DTAttributedUIButton.h
+//  SHGAttributedButton.h
 #import <UIKit/UIKit.h>
 
 IB_DESIGNABLE
@@ -119,10 +119,10 @@ IB_DESIGNABLE
 
 @end
 
-//  DTAttributedUIButton.m
-#import "DTAttributedUIButton.h"
+//  SHGAttributedButton.m
+#import "SHGAttributedButton.h"
 
-@implementation DTAttributedUIButton
+@implementation SHGAttributedButton
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     
