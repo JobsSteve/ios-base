@@ -1,8 +1,7 @@
 38. Custom Button
 ==
 
-## Кастомная кнопка - SHGRedButton
-
+## 1. Кастомная кнопка - SHGRedButton
 ```objc
 //
 //  SHGRedButton.m
@@ -88,7 +87,6 @@
 ```
 
 ### Как использовать
-
 ```objc
 //@interface ViewController ()
 @property (weak, nonatomic) IBOutlet SHGRedButton *checkFinesButton;
@@ -98,9 +96,52 @@
 [self.orderButton setupLittleButton];
 ```
 
+## 2. Кастомизация кнопки через IB (Interface Builder).
 
+* Кейворды: IB_DESIGNABLE и IBInspectable.
 
+```objc
+//  DTAttributedUIButton.h
+#import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+@interface SHGAttributedButton : UIButton
 
+@property (nonatomic, strong) IBInspectable UIColor *borderColor;
+@property (nonatomic) IBInspectable CGFloat borderWidth;
+@property (nonatomic) IBInspectable CGFloat cornerRadius;
 
+@end
 
+//  DTAttributedUIButton.m
+#import "DTAttributedUIButton.h"
+
+@implementation DTAttributedUIButton
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setProperties];
+    }
+    return self;
+}
+
+- (void)setProperties {
+    self.clipsToBounds = YES;
+}
+
+- (void)setBorderColor:(UIColor *)color {
+    self.layer.borderColor = color.CGColor;
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth {
+    self.layer.borderWidth = borderWidth;
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    self.layer.cornerRadius = cornerRadius;
+}
+
+@end
+```
