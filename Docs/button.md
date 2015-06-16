@@ -99,6 +99,7 @@
 ## 2. Кастомизация кнопки через IB (Interface Builder).
 
 * Кейворды: IB_DESIGNABLE и IBInspectable.
+https://www.weheartswift.com/make-awesome-ui-components-ios-8-using-swift-xcode-6/
 
 Этот код позволяет менять: цвет рамки, ширину рамки и радиус рамки внутри IB (Shows Attributes Inspector).
 
@@ -146,4 +147,20 @@ IB_DESIGNABLE
 }
 
 @end
+
+```
+
+### IBInspectable valid types
+
+```objc
+Int
+CGFloat
+Double
+String
+Bool
+CGPoint
+CGSize
+CGRect
+UIColor
+UIImage
 ```
