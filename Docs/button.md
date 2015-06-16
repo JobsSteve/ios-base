@@ -100,6 +100,8 @@
 
 * Кейворды: IB_DESIGNABLE и IBInspectable.
 
+Этот код позволяет менять: цвет рамки, ширину рамки и радиус рамки внутри IB (Shows Attributes Inspector).
+
 ```objc
 //  DTAttributedUIButton.h
 #import <UIKit/UIKit.h>
