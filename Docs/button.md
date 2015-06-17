@@ -168,8 +168,8 @@ UIColor
 UIImage
 ```
 
-
-``` Higlighted button
+### Higlighted button
+``` objc
 You can override UIButton :
 
 - (void) setHighlighted:(BOOL)highlighted {
