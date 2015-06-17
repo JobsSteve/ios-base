@@ -1,4 +1,4 @@
-6. Prefix Header. Set .pch file and helpers.
+6. Prefix Header. Set .pch file and helpers/macroses.
 ==
 
 ## Зачем нужен?
@@ -74,3 +74,8 @@ Helpers in .pch file.
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 ```
 
+
+### RGB
+```objc
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+```
