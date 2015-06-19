@@ -1,11 +1,19 @@
-# rg-ios-base
-iOS Base - project with pre-settings, new techniques, well-organised code and best-practices for quickly starting the new project.
+objc-dev-guides
+==
 
-### iOS Base
+**objc-dev-guides** - best practices for development and quickly starting the new projet.
+(Лучшие практики разботки на objC).
 
-**[1. Ignoring files. gitignore. (Проект начинается с добавления gitgonre файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+### Objective-C Development Guides
 
+**[1. Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+    
+  **[Работа c Git]()**
+    
+  **[Простой Git Flow для командной разработки]()**
+    
 **[2. Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
+
 
 **[3. Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
 
@@ -44,7 +52,7 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 **[21. Snippets. (Набор мелких решений)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/snippets.md)**
 
 
-### iOS Develompent Guides
+### iOS Guides
 
 **[1. Effective Objective-C.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/objc.md)**
 
