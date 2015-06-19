@@ -3,17 +3,17 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 
 ### iOS Base
 
-**[1. Ignoring files. gitignore.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+**[1. Ignoring files. gitignore. (Проект начинается с добавления gitgonre файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
 
-**[2. Groups structure in Project Navigator and directories.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
+**[2. Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
 
-**[3. Code Organization. Pragmas.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
+**[3. Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
 
-**[4. CocoaPods for managing third party libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+**[4. CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
 
-**[5. Podfile with recommended 3rd party libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+**[5. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
 
-**[6. Categories.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
+**[6. Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
 
 **[7. Prefix header file & helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/prefix_header_helpers.md)**
 
