@@ -1,5 +1,13 @@
+34. Sizes.
+==
 
-## 12. Documented code.
+```
+CGRect screenRect = [[UIScreen mainScreen] bounds];
+CGFloat screenWidth = screenRect.size.width;
+CGFloat screenHeight = screenRect.size.height;
+```
+
+
 
 
 

@@ -1,8 +1,7 @@
 38. Custom Button
 ==
 
-## Кастомная кнопка - SHGRedButton
-
+## 1. Кастомная кнопка - SHGRedButton
 ```objc
 //
 //  SHGRedButton.m
@@ -88,7 +87,6 @@
 ```
 
 ### Как использовать
-
 ```objc
 //@interface ViewController ()
 @property (weak, nonatomic) IBOutlet SHGRedButton *checkFinesButton;
@@ -98,9 +96,98 @@
 [self.orderButton setupLittleButton];
 ```
 
+## 2. Кастомизация кнопки через IB (Interface Builder).
 
+http://www.appcoda.com/ibdesignable-ibinspectable-tutorial/
 
+https://www.weheartswift.com/make-awesome-ui-components-ios-8-using-swift-xcode-6/
 
+* Кейворды: IB_DESIGNABLE и IBInspectable.
 
+* Этот код позволяет менять: цвет рамки, ширину рамки и радиус рамки внутри IB (Shows Attributes Inspector).
 
+```objc
+//  SHGAttributedButton.h
+#import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+@interface SHGAttributedButton : UIButton
+
+@property (nonatomic, strong) IBInspectable UIColor *borderColor;
+@property (nonatomic) IBInspectable CGFloat borderWidth;
+@property (nonatomic) IBInspectable CGFloat cornerRadius;
+
+@end
+
+//  SHGAttributedButton.m
+#import "SHGAttributedButton.h"
+
+@implementation SHGAttributedButton
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setProperties];
+    }
+    return self;
+}
+
+- (void)setProperties {
+    self.clipsToBounds = YES;
+}
+
+- (void)setBorderColor:(UIColor *)color {
+    self.layer.borderColor = color.CGColor;
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth {
+    self.layer.borderWidth = borderWidth;
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    self.layer.cornerRadius = cornerRadius;
+}
+
+@end
+
+```
+
+### IBInspectable valid types
+
+```objc
+Int
+CGFloat
+Double
+String
+Bool
+CGPoint
+CGSize
+CGRect
+UIColor
+UIImage
+```
+
+### Higlighted button
+``` objc
+You can override UIButton :
+
+- (void) setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+
+    if (highlighted) {
+        self.backgroundColor = UIColorFromRGB(0x387038);
+    }
+    else {
+        self.backgroundColor = UIColorFromRGB(0x5bb75b);
+    }
+}
+
+Create a method macro like:
+
+  #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+and use as:
+
+ self.backgroundColor = UIColorFromRGB(0X90EE90);
+
+```
