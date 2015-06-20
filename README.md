@@ -25,57 +25,65 @@ objc-dev-guides
 
 **3. Оформление кода**
 
-**[3.1 Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
+* **[3.1 Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
 
-**[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
+* **[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
+* **[3.3 Readme.]()
 
 **4. Сборка. Сторонние библиотеки**
 
-**[4.1 CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+* **[4.1 CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
 
-**[4.2. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+* **[4.2. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
 
 **5. Стандарты кодирования**
 
 **6. Категории. Макросы. Тулзы.**
 
-**7. Дебаг.**
+* **[6.1 Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
+
+* **[6.2 Prefix header file & helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/prefix_header_helpers.md)**
+
+**7. Дебаг. Выявление ошибок.**
+
+* **[7.1 Crash Report Services. (Crittercism, Crashlytics)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/crash_report.md)**
+
 
 **8. Архитектура и Сервисы.**
 
 **9. Работа с Xcode.**
 
+* **[9.1 Treat "Warnings" as errors. (Hide warnings in XCode).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/treat_warnings.md)**
+
+* **[9.2 Memory Warning code.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/memory_warning.md)**
+
+* **[9.3 Build Schemes and Configurations. Staging and Production builds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/schemes.md)**
+
 **10. Работа с Константами.**
 
-**11. Антипаттерны.**
+**11. База данных.**
 
-**12. База данных.**
+
+
+**12. Антипаттерны.**
 
 **12. CI и Автоматизированное тестирование.**
 
 **13. Dependency Injection.**
 
+**14. Функциональное программирование.**
 
 
 
 
-**[6. Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
-
-**[7. Prefix header file & helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/prefix_header_helpers.md)**
 
 **[8. Debug Logging. DLog.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug_logging.md)**
 
 
 
 
-**[10. Treat "Warnings" as errors. (Hide warnings in XCode).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/treat_warnings.md)**
 
-**[11. Memory Warning code.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/memory_warning.md)**
-
-**[12. Build Schemes and Configurations. Staging and Production builds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/schemes.md)**
-
-**[13. Crash Report Services. (Crittercism, Crashlytics)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/crash_report.md)**
 
 [14. Scripts. (Automatically push build to TestFlight)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scripts_push_build_testflight.md).
 
