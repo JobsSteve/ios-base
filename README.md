@@ -4,13 +4,15 @@ objc-dev-guides
 **objc-dev-guides** - best practices for development and quickly starting the new projet.
 (Лучшие практики разботки на objC).
 
-### Objective-C Development Guides
+## Objective-C Development Guides
+
+### Base (Базовые гайды)
 
 **[1. Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
-  **[Работа c Git]()**
+*  **[Работа c Git]()**
     
-  **[Простой Git Flow для командной разработки]()**
+*  **[Простой Git Flow для командной разработки]()**
     
 **[2. Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
 
@@ -52,7 +54,7 @@ objc-dev-guides
 **[21. Snippets. (Набор мелких решений)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/snippets.md)**
 
 
-### iOS Guides
+### Additional (Расширенные гайды)
 
 **[1. Effective Objective-C.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/objc.md)**
 
