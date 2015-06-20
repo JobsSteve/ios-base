@@ -8,26 +8,39 @@ objc-dev-guides
 
 ### Base (Базовые гайды)
 
-**[1. Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+**[1. Git.]()**
+
+* **[1.1 Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
-*  **[Работа c Git]()**
+* **[1.2 Работа c Git. Команды.]()**
     
-*  **[Простой Git Flow для командной разработки]()**
+* **[1.3 Простой Git Flow для командной разработки]()**
     
-**[2. Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
+
+**[2. Структура проекта.]()**
+
+* **[2.1 Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
 
 
-**[3. Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
+**[3. Оформление кода]()**
 
-**[4. CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+**[3.1 Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
 
-**[5. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+
+**[4. Сборка. Сторонние библиотеки.]()**
+
+**[4.1 CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+
+**[4.2. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+
 
 **[6. Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
 
 **[7. Prefix header file & helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/prefix_header_helpers.md)**
 
 **[8. Debug Logging. DLog.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug_logging.md)**
+
+
 
 **[9. Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
