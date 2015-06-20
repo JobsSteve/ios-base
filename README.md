@@ -8,7 +8,7 @@ objc-dev-guides
 
 ### Base (Базовые гайды)
 
-**[1. Git.]()**
+**1. Git.**
 
 * **[1.1 Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
@@ -17,21 +17,47 @@ objc-dev-guides
 * **[1.3 Простой Git Flow для командной разработки]()**
     
 
-**[2. Структура проекта.]()**
+**2. Структура проекта.**
 
 * **[2.1 Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
+* [2.2 Альтернативная структура проекта.]()
 
 
-**[3. Оформление кода]()**
+**3. Оформление кода**
 
 **[3.1 Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
 
+**[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
-**[4. Сборка. Сторонние библиотеки.]()**
+
+**4. Сборка. Сторонние библиотеки**
 
 **[4.1 CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
 
 **[4.2. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+
+**5. Стандарты кодирования**
+
+**6. Категории. Макросы. Тулзы.**
+
+**7. Дебаг.**
+
+**8. Архитектура и Сервисы.**
+
+**9. Работа с Xcode.**
+
+**10. Работа с Константами.**
+
+**11. Антипаттерны.**
+
+**12. База данных.**
+
+**12. CI и Автоматизированное тестирование.**
+
+**13. Dependency Injection.**
+
+
+
 
 
 **[6. Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
@@ -42,7 +68,6 @@ objc-dev-guides
 
 
 
-**[9. Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
 **[10. Treat "Warnings" as errors. (Hide warnings in XCode).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/treat_warnings.md)**
 
