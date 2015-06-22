@@ -184,7 +184,7 @@ objc-dev-guides
 
 [41. Dependency Injection. Typhoon framework.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/di.md)
 
-[42. Классы хелперы.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)
+[42. Tools. Классs Helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)
 
 [43. Sizes. Frames. Bounds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/sizes.md)
 
