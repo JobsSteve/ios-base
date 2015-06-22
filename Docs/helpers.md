@@ -1,6 +1,8 @@
 12. Tools. Классы Helpers.
 ==
 
+## Tools - AppTheme для работы с темами: (цвета и шрифты).
+
 ```objc
 @interface FTGAppTheme : NSObject
 
