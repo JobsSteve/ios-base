@@ -128,7 +128,7 @@ objc-dev-guides
 
 **[13. AppDelegate. UIApplication.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/appdelegate.md)**
 
-**[14. UIViewController transitions (moda, push/pop). Pass data between. controllers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller.md)**
+**[14. UIViewController transitions (modal, push/pop). Pass data between. controllers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller.md)**
 
 [15. UIView. UIView with NIB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)
 
@@ -184,7 +184,7 @@ objc-dev-guides
 
 [41. Dependency Injection. Typhoon framework.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/di.md)
 
-[42. Tools. Классs Helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)
+[42. Tools. Классы Helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)
 
 [43. Sizes. Frames. Bounds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/sizes.md)
 
