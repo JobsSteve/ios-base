@@ -154,7 +154,7 @@ objc-dev-guides
 
 [26. JavaDoc (HeaderDoc). Documented code. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/java_doc.md)
 
-**[27.Командная разработка. Работа с Git.  Git Flow. Pull requests.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
+**[27. Командная разработка. Работа с Git.  Git Flow. Pull requests.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
 
 [28. Unit testing. Automation testing.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/testing.md)
 
@@ -184,7 +184,7 @@ objc-dev-guides
 
 [41. Dependency Injection. Typhoon framework.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/di.md)
 
-[42. Tools. Классы Helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)
+**[42. Tools. Классы Helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)**
 
 [43. Sizes. Frames. Bounds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/sizes.md)
 
