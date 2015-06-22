@@ -180,7 +180,7 @@ objc-dev-guides
 
 **[39. Custom TextField.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/textfield.md)**
 
-[40. Blocks. Как именовать методы с блоками.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/blocks.md)
+**[40. Blocks. Как именовать методы с блоками.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/blocks.md)**
 
 [41. Dependency Injection. Typhoon framework.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/di.md)
 
