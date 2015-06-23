@@ -38,4 +38,13 @@ const NSTimerInterval EOCAnimatedViewAnimationDuration = 0.3;
 
 Константы картинок храним внутри сцен у сторибордов.
 
+### Енумераторы. Enumerators.
+
+```objc
+typedef NS_ENUM(NSInteger, DTGenderType) {
+    DTGenderTypeNone = 0,
+    DTGenderTypeMale = 1,
+    DTGenderTypeFemale = 2
+};
+```
 
