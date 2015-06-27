@@ -1,5 +1,5 @@
 
-Navigation Controller.
+Navigation Controller Appearance. Root TabBarController.
 ==
 
 ## Установка левой кнопки (Left Bar Button Item).
