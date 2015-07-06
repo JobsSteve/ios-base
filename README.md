@@ -2,7 +2,7 @@ objc-dev-guides
 ==
 
 **objc-dev-guides** - best practices for development and quickly starting the new projet.
-(Лучшие практики разботки на objC).
+(Лучшие практики разработки проектов на objective-c).
 
 ## Objective-C Development Guides
 
@@ -193,4 +193,10 @@ objc-dev-guides
 [44. User Defaults. Helper class.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/userdefaults.md)
 
 [45. UIPageViewController. DDPageViewController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
+
+[46. Custom popups, add subview above all views on screen. Custom popup control.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
+
+[47. ]()
+
+
 
