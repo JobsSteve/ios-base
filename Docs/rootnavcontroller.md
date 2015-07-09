@@ -1,4 +1,4 @@
-Root Navigation Controller
+Navigation Controller Appearance. Root Navigation Controller.
 ==
 
 ## Navigation Controller
