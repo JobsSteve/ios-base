@@ -118,7 +118,7 @@ objc-dev-guides
 
 **[7. RootNavigationController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/rootnavcontroller.md)**
 
-[8. RootTabBarController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/roottabbarcontroller.md)
+**[8. RootTabBarController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/roottabbarcontroller.md)**
 
 **[9. Controller hierarchy. RootController. Autorotations. StatusBar.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller_hierarchy.md)**
 
@@ -196,7 +196,7 @@ objc-dev-guides
 
 [46. Custom popups, add subview above all views on screen. Custom popup control.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
 
-[47. ]()
+[47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
 
 
 
