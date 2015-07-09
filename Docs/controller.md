@@ -1,5 +1,5 @@
-
-## 5. UIViewController. Pass data between controllers.
+5. ViewController. Popups. Pass data between controllers. Perform Segues.
+==
 
 ## Navigation Controller
 
@@ -40,5 +40,54 @@ And in your MyViewController class :
 }
 ```
 
+
+## Popups
+
+```objc
+- (void)setupRegistrationPrompt
+{
+    UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
+    self.registrationPC = [[SHGRegistrationPromptController alloc] initWithNibName:@"SHGRegistrationPromptView" bundle:nil];
+    self.registrationPC.delegate = self;
+    [currentWindow addSubview:_registrationPC.view];
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    [self.registrationPC.view setFrame:CGRectMake(0, 0, screenRect.size.width, screenRect.size.height)];
+    
+    self.registrationPC.view.hidden = YES;
+}
+```
+
+## Perform Segues
+
+```objc
+
+//Сегвей м/у контроллерами
+SettingsToTourSegue
+
+//Константа
+static NSString *const kDTSettingsToTourSegue = @"SettingsToTourSegue";
+
+//Вызов сегвея
+[self performSegueWithIdentifier:kDTSettingsToTourSegue sender:self];
+
+#pragma mark - Navigation
+
+//Передача параметров
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:kDTSettingsToProfileSegue]) {
+        DTProfileViewController *vc = [segue destinationViewController];
+        vc.user = [DTApi instance].currentUser;
+    }
+    
+    if ([[segue identifier] isEqualToString:kDTSettingsToProfileSegue]) {
+        DTVideoPresentationViewController *vc = [segue destinationViewController];
+        vc.hidesBottomBarWhenPushed = YES;
+        
+        //vc.user = [DTApi instance].currentUser;
+    }
+}
+```
 
 
