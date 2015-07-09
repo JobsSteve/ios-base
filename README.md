@@ -132,7 +132,7 @@ objc-dev-guides
 
 **[14. ViewController. Popups. Pass data between controllers. Perform Segues.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller.md)**
 
-[15. UIView. UIView with NIB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)
+**[15. UIView. UIView with NIB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)**
 
 [16. Delegation vs. Notification.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/delegation-notification.md)
 
