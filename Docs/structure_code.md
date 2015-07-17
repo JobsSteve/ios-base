@@ -20,7 +20,7 @@ Also there is a lot of options like:
 // MARK: Midhun
 ```
 
-Example
+Example:
 ```objc
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // TODO: Return count of forecast
