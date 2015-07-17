@@ -31,7 +31,7 @@ objc-dev-guides
 
 * **[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
-* **[3.3 Readme.]()
+* **[3.3 Readme.]()**
 
 **4. Сборка. Сторонние библиотеки**
 
@@ -194,9 +194,9 @@ objc-dev-guides
 
 [45. UIPageViewController. DDPageViewController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
 
-[46. Custom popups, add subview above all views on screen. Custom popup control.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
+[46. Custom popups, add subview above all views on screen. Custom popup control.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/popups.md)
 
-[47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
+[47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/permissions.md)
 
 
 
