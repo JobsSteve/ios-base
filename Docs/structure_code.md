@@ -1,4 +1,4 @@
-2. Code Organization. Pragmas. Markers. warnings.
+2. Code Organization. Pragmas. Imports. Markers. Warnings.
 ==
 
 ##Pragmas
@@ -18,6 +18,8 @@ Also there is a lot of options like:
 // !!!: Midhun 
 
 // MARK: Midhun
+
+// FIX: Everything crashes all the time 
 ```
 
 Example:
@@ -27,3 +29,11 @@ Example:
     return 0;
 }
 ```
+
+## Warnings
+
+Example of use:
+```
+#warning Clean up this code after testing
+```
+
