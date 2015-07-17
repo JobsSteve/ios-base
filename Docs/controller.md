@@ -1,4 +1,4 @@
-14. ViewController. Popups. Pass data between controllers. Perform Segues.
+14. ViewController. Popups. Pass data between controllers. Perform Segues. UIWindow.
 ==
 
 ## Navigation Controller
@@ -89,5 +89,16 @@ static NSString *const kDTSettingsToTourSegue = @"SettingsToTourSegue";
     }
 }
 ```
+## Set Root ViewController or SubView
 
+```objc
 
+IncomingViewController *incomingVC = [self.mainStoryboard instantiateViewControllerWithIdentifier:kIncomingController];
+   
+UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
+[currentWindow setRootViewController:incomingVC];
+
+//add subview
+//[currentWindow addSubview:incomingVC.view];
+    
+```
