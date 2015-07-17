@@ -1,4 +1,4 @@
-2. Code Organization. Pragmas. Imports. Markers. Warnings.
+3.1 Code Organization. Pragmas. Imports. Markers. Warnings.
 ==
 
 ##Pragmas
