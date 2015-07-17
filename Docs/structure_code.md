@@ -5,7 +5,7 @@
 
 ![Pragmas](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/pragmas.png)
 
-`Control-6` - Show Document Items
+`Control-6` - Show Document Items (Open Navigation Document).
 
 ## Markers
 
