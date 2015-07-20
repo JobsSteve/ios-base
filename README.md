@@ -198,5 +198,9 @@ objc-dev-guides
 
 [47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/permissions.md)
 
+[48. Media. Images.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/images.md)
 
+[49. Media. Videos.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/videos.md)
+
+[50. Media. Audios.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/audios.md)
 
