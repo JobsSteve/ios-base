@@ -1,33 +1,91 @@
-# rg-ios-base
-iOS Base - project with pre-settings, new techniques, well-organised code and best-practices for quickly starting the new project.
+objc-dev-guides
+==
 
-### iOS Base
+**objc-dev-guides** - best practices for development and quickly starting the new projet.
+(Лучшие практики разработки проектов на objective-c).
 
-**[1. Ignoring files. gitignore.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+## Objective-C Development Guides
 
-**[2. Groups structure in Project Navigator and directories.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
+### Base (Базовые гайды)
 
-**[3. Code Organization. Pragmas.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
+**1. Git.**
 
-**[4. CocoaPods for managing third party libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+* **[1.1 Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+    
+* **[1.2 Работа c Git. Команды.]()**
+    
+* **[1.3 Простой Git Flow для командной разработки.]()**
 
-**[5. Podfile with recommended 3rd party libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+* **[1.4 Source Tree. Source Tree vs Terminal.]()**
+    
 
-**[6. Categories.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
+**2. Структура проекта.**
 
-**[7. Prefix header file & helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/prefix_header_helpers.md)**
+* **[2.1 Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
+* [2.2 Альтернативная структура проекта.]()
+
+
+**3. Оформление кода**
+
+* **[3.1 Code Organization. Pragmas. (Оформление кода. Прагмы для логического разбиение кода. Разбиение импортов/свойств. Оформление ImagesAssets.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/structure_code.md)**
+
+* **[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
+
+* **[3.3 Readme.]()**
+
+**4. Сборка. Сторонние библиотеки**
+
+* **[4.1 CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+
+* **[4.2. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+
+**5. Стандарты кодирования**
+
+**6. Категории. Макросы. Тулзы.**
+
+* **[6.1 Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
+
+* **[6.2 Prefix header file & helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/prefix_header_helpers.md)**
+
+**7. Дебаг. Выявление ошибок.**
+
+* **[7.1 Crash Report Services. (Crittercism, Crashlytics)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/crash_report.md)**
+
+
+**8. Архитектура и Сервисы.**
+
+**9. Работа с Xcode.**
+
+* **[9.1 Treat "Warnings" as errors. (Hide warnings in XCode).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/treat_warnings.md)**
+
+* **[9.2 Memory Warning code.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/memory_warning.md)**
+
+* **[9.3 Build Schemes and Configurations. Staging and Production builds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/schemes.md)**
+
+**10. Работа с Константами.**
+
+**11. База данных.**
+
+
+
+**12. Антипаттерны.**
+
+**12. CI и Автоматизированное тестирование.**
+
+**13. Dependency Injection.**
+
+**14. Функциональное программирование.**
+
+
+
+
 
 **[8. Debug Logging. DLog.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug_logging.md)**
 
-**[9. Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
-**[10. Treat "Warnings" as errors. (Hide warnings in XCode).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/treat_warnings.md)**
 
-**[11. Memory Warning code.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/memory_warning.md)**
 
-**[12. Build Schemes and Configurations. Staging and Production builds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/schemes.md)**
 
-**[13. Crash Report Services. (Crittercism, Crashlytics)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/crash_report.md)**
 
 [14. Scripts. (Automatically push build to TestFlight)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scripts_push_build_testflight.md).
 
@@ -44,7 +102,7 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 **[21. Snippets. (Набор мелких решений)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/snippets.md)**
 
 
-### iOS Develompent Guides
+### Additional (Расширенные гайды)
 
 **[1. Effective Objective-C.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/objc.md)**
 
@@ -60,7 +118,7 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 
 **[7. RootNavigationController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/rootnavcontroller.md)**
 
-[8. Navigation Controller. RootTabBarController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/roottabbarcontroller.md)
+**[8. RootTabBarController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/roottabbarcontroller.md)**
 
 **[9. Controller hierarchy. RootController. Autorotations. StatusBar.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller_hierarchy.md)**
 
@@ -72,9 +130,9 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 
 **[13. AppDelegate. UIApplication.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/appdelegate.md)**
 
-**[14. UIViewController transitions (moda, push/pop). Pass data between. controllers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller.md)**
+**[14. ViewController. Popups. Pass data between controllers. Perform Segues.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller.md)**
 
-[15. UIView. UIView with NIB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)
+**[15. UIView. UIView with NIB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)**
 
 [16. Delegation vs. Notification.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/delegation-notification.md)
 
@@ -98,7 +156,7 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 
 [26. JavaDoc (HeaderDoc). Documented code. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/java_doc.md)
 
-**[27.Командная разработка. Работа с Git.  Git Flow. Pull requests.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
+**[27. Командная разработка. Работа с Git.  Git Flow. Pull requests.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
 
 [28. Unit testing. Automation testing.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/testing.md)
 
@@ -124,14 +182,25 @@ iOS Base - project with pre-settings, new techniques, well-organised code and be
 
 **[39. Custom TextField.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/textfield.md)**
 
-[40. Blocks. Как именовать методы с блоками.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/blocks.md)
+**[40. Blocks. Как именовать методы с блоками.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/blocks.md)**
 
 [41. Dependency Injection. Typhoon framework.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/di.md)
 
-[42. Классы хелперы.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)
+**[42. Tools. Классы Helpers.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/helpers.md)**
 
 [43. Sizes. Frames. Bounds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/sizes.md)
 
 [44. User Defaults. Helper class.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/userdefaults.md)
 
+[45. UIPageViewController. DDPageViewController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
+
+[46. Custom popups, add subview above all views on screen. Custom popup control.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/popups.md)
+
+[47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/permissions.md)
+
+[48. Media. Images.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/images.md)
+
+[49. Media. Videos.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/videos.md)
+
+[50. Media. Audios.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/audios.md)
 
