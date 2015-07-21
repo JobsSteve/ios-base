@@ -33,6 +33,17 @@ Custom popups, add subview above all views on screen. Custom popup control.
         self.registrationPC.view.hidden = YES;
     }];
 }
+
+#pragma mark - Actions
+
+- (void)displayRegistrationPrompt {
+
+    self.registrationPC.view.alpha = 0;
+    self.registrationPC.view.hidden = NO;
+    [UIView animateWithDuration:0.4 animations:^{
+        self.registrationPC.view.alpha = 1;
+    }];
+}
 ```
 
 ```objc
