@@ -12,11 +12,11 @@ objc-dev-guides
 
 * **[1.1 Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
-* **[1.2 Работа c Git. Команды.]()**
+* **[1.2 Работа c Git. Команды.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
     
-* **[1.3 Простой Git Flow для командной разработки.]()**
+* **[1.3 Простой Git Flow для командной разработки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
 
-* **[1.4 Source Tree. Source Tree vs Terminal.]()**
+* **[1.4 Source Tree. Source Tree vs Terminal.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/source_tree.md)**
     
 
 **2. Структура проекта.**
@@ -31,7 +31,7 @@ objc-dev-guides
 
 * **[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
-* **[3.3 Readme.]()**
+* **[3.3 Readme.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/readme_rules.md)**
 
 **4. Сборка. Сторонние библиотеки**
 
@@ -192,13 +192,13 @@ objc-dev-guides
 
 [44. User Defaults. Helper class.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/userdefaults.md)
 
-[45. UIPageViewController. DDPageViewController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
+[45. UIPageViewController. DDPageControl+UIScrollView](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
 
-[46. Custom popups, add subview above all views on screen. Custom popup control.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/popups.md)
+**[46. Popup Control. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/popups.md)**
 
 [47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/permissions.md)
 
-[48. Media. Images.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/images.md)
+**[48. Media. Images.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/images.md)**
 
 [49. Media. Videos.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/videos.md)
 
