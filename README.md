@@ -12,11 +12,11 @@ objc-dev-guides
 
 * **[1.1 Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
-* **[1.2 Работа c Git. Команды.]()**
+* **[1.2 Работа c Git. Команды.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
     
-* **[1.3 Простой Git Flow для командной разработки.]()**
+* **[1.3 Простой Git Flow для командной разработки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
 
-* **[1.4 Source Tree. Source Tree vs Terminal.]()**
+* **[1.4 Source Tree. Source Tree vs Terminal.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/source_tree.md)**
     
 
 **2. Структура проекта.**
@@ -31,7 +31,7 @@ objc-dev-guides
 
 * **[3.2 Graphic Assets.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/graphic_assets.md)**
 
-* **[3.3 Readme.]()**
+* **[3.3 Readme.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/readme_rules.md)**
 
 **4. Сборка. Сторонние библиотеки**
 
