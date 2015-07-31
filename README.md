@@ -204,3 +204,9 @@ objc-dev-guides
 
 [50. Media. Audios.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/audios.md)
 
+[51. State Restoration and Preservation.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/restoration.md)
+
+[52. Quickblox.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/quickblox.md)
+
+
+
