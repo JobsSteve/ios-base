@@ -57,7 +57,6 @@ static DTRootTabBarController *_instance;
     [super viewDidLoad];
     
     _instance = self;
-    
     [self configureTabBar];
 }
 
@@ -131,19 +130,35 @@ static DTRootTabBarController *_instance;
 }
 
 - (void)setupNewMessages {
-    
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:1];
     [item1 setImage:[[UIImage imageNamed:@"TabBarMessages"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [item1 setSelectedImage:[[UIImage imageNamed:@"TabBarMessagesNew"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 }
 
-- (void)HideBar:(BOOL)hidden
-{
+- (void)HideBar:(BOOL)hidden {
     [self setTabBarHidden:hidden animated:YES];
 }
 
 @end
-
 ```
+
+## Add TabBarController programmatically
+
+```objc
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+   FirstViewController * fvc=[[FirstViewController alloc]initWithNibName:@"FirstViewController" bundle:nil];
+   SecondViewController * svc=[[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
+   ThirdViewController * tvc=[[ThirdViewController alloc]initWithNibName:@"ThirdViewController" bundle:nil];
+   FourthViewController * fvc2=[[FourthViewController alloc]initWithNibName:@"FourthViewController" bundle:nil];
+   
+   tabbar=[[UITabBarController alloc]init];
+   tabbar.viewControllers=[NSArray arrayWithObjects:fvc,svc,tvc,fvc2,nil];
+
+   [self.window addSubview:tabbar.view];
+}
+```
+
+
 
 
