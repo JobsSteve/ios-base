@@ -102,3 +102,27 @@ UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
 //[currentWindow addSubview:incomingVC.view];
     
 ```
+## Prepare for segue with TabBarController (Tab Selection)
+
+```objc
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSLog(@"segue = %@", [segue identifier]); //"SplashToTabBarSegue"
+    
+    if ([[segue identifier] isEqualToString:@"SplashToTabBarSegue"])
+    {
+        NSLog(@"%@", [segue destinationViewController]); //"MainTabBarController"
+        NSLog(@"%@", [segue sourceViewController]); //"SplashController"
+        
+        DTMainTabBarViewController *mainVC = [segue destinationViewController];
+        
+        NSLog(@"%@", mainVC.viewControllers);
+        
+        [mainVC setSelectedIndex:2];
+        //mainVC setSelectedViewController:
+    }
+}
+```
