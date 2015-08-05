@@ -147,15 +147,25 @@ static DTRootTabBarController *_instance;
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-   FirstViewController * fvc=[[FirstViewController alloc]initWithNibName:@"FirstViewController" bundle:nil];
-   SecondViewController * svc=[[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
-   ThirdViewController * tvc=[[ThirdViewController alloc]initWithNibName:@"ThirdViewController" bundle:nil];
-   FourthViewController * fvc2=[[FourthViewController alloc]initWithNibName:@"FourthViewController" bundle:nil];
+- (void)transitionToTabBar {
+    
+    DTRootTabBarController *mainVC = [DTRootTabBarController new];
+    
+    DTFeedNoOneViewController *feedVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DTFeedNoOneViewController"];
+    DTChatListViewController *chatVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DTChatListViewController"];
+    DTProfileSettingsViewController *settingsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DTProfileSettingsViewController"];
+    
+    DTRootNavigationController *rootFeedVC = [[DTRootNavigationController alloc] initWithRootViewController:feedVC];
+    DTRootNavigationController *rootChatVC = [[DTRootNavigationController alloc] initWithRootViewController:chatVC];
+    DTRootNavigationController *rootSettingsVC = [[DTRootNavigationController alloc] initWithRootViewController:settingsVC];
+    
+    mainVC.viewControllers = @[rootFeedVC, rootChatVC, rootSettingsVC];
+    
+    [self presentViewController:mainVC animated:YES completion:nil];
+    
+    [mainVC setSelectedIndex:2];
    
-   tabbar=[[UITabBarController alloc]init];
-   tabbar.viewControllers=[NSArray arrayWithObjects:fvc,svc,tvc,fvc2,nil];
-
-   [self.window addSubview:tabbar.view];
+    [self.window addSubview:mainVC.view];
 }
 ```
 
