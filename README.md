@@ -208,7 +208,7 @@ objc-dev-guides
 
 [52. Quickblox.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/quickblox.md)
 
-[53. UILabel. TTTAttributedLabel.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/label.md)
+**[53. UILabel. TTTAttributedLabel.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/label.md)**
 
 
 
