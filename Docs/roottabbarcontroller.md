@@ -57,7 +57,6 @@ static DTRootTabBarController *_instance;
     [super viewDidLoad];
     
     _instance = self;
-    
     [self configureTabBar];
 }
 
@@ -131,19 +130,45 @@ static DTRootTabBarController *_instance;
 }
 
 - (void)setupNewMessages {
-    
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:1];
     [item1 setImage:[[UIImage imageNamed:@"TabBarMessages"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [item1 setSelectedImage:[[UIImage imageNamed:@"TabBarMessagesNew"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 }
 
-- (void)HideBar:(BOOL)hidden
-{
+- (void)HideBar:(BOOL)hidden {
     [self setTabBarHidden:hidden animated:YES];
 }
 
 @end
-
 ```
+
+## Add TabBarController programmatically
+
+```objc
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+- (void)transitionToTabBar {
+    
+    DTRootTabBarController *mainVC = [DTRootTabBarController new];
+    
+    DTFeedNoOneViewController *feedVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DTFeedNoOneViewController"];
+    DTChatListViewController *chatVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DTChatListViewController"];
+    DTProfileSettingsViewController *settingsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DTProfileSettingsViewController"];
+    
+    DTRootNavigationController *rootFeedVC = [[DTRootNavigationController alloc] initWithRootViewController:feedVC];
+    DTRootNavigationController *rootChatVC = [[DTRootNavigationController alloc] initWithRootViewController:chatVC];
+    DTRootNavigationController *rootSettingsVC = [[DTRootNavigationController alloc] initWithRootViewController:settingsVC];
+    
+    mainVC.viewControllers = @[rootFeedVC, rootChatVC, rootSettingsVC];
+    
+    [self presentViewController:mainVC animated:YES completion:nil];
+    
+    [mainVC setSelectedIndex:2];
+   
+    [self.window addSubview:mainVC.view];
+}
+```
+
+
 
 
