@@ -28,11 +28,14 @@ Then, in your TTTAttributedLabelDelegate:
 
 TTTAttributedLabel is a fork of OHAttributedLabel.
 
+
+## Nimbus Attributed Label
+
 If you want a more complex approach, have a look to Nimbus Attributed Label. It support custom links out-of-the-box.
 
+https://github.com/jverkoey/nimbus
 
-
-
+http://docs.nimbuskit.info/group___nimbus_attributed_label.html
 
 
 
