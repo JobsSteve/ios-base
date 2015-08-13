@@ -210,6 +210,7 @@ objc-dev-guides
 
 **[53. UILabel. TTTAttributedLabel.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/label.md)**
 
+**[54. NSArray.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/array.md)**
 
 
 
