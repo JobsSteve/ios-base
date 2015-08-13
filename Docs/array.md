@@ -4,7 +4,7 @@
 ## Check for nil and for empty
 
 ```objc
-if (!array || !array.count){
+if (!array || !array.count) {
   ...
 }
 
