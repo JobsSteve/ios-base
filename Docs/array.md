@@ -7,6 +7,11 @@
 if (!array || !array.count){
   ...
 }
+
+if (array == nil || [array count] == 0) {
+    ...
+}
+
 ```
 
 `!array` - check for nil
