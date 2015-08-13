@@ -212,5 +212,10 @@ objc-dev-guides
 
 **[54. NSArray.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/array.md)**
 
+[55. Convertations. Literals.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/convertations.md)
+
+[56. ]()
+
+
 
 
