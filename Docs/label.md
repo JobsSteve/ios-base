@@ -31,14 +31,16 @@ TTTAttributedLabel is a fork of OHAttributedLabel.
 ## IBDesignable TTTAttributedLabel (Чтобы использовать через IB)
 
 TTTAttributedLabel includes IBInspectable and IB_DESIGNABLE annotations to enable configuring the label inside Interface Builder. However, if you see these warnings when building...
-
+```
 IB Designables: Failed to update auto layout status: Failed to load designables from path (null)
 IB Designables: Failed to render instance of TTTAttributedLabel: Failed to load designables from path (null)
+```
 ...then you are likely using TTTAttributedLabel as a static library, which does not support IB annotations. Some workarounds include:
 
+```
 Install TTTAttributedLabel as a dynamic framework using CocoaPods with `use_frameworks!` in your Podfile, or with Carthage
 Install TTTAttributedLabel by dragging its source files to your project
-
+```
 
 ## Nimbus Attributed Label
 
