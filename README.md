@@ -10,11 +10,11 @@ objc-dev-guides
 
 **1. Git.**
 
-* **[1.1 Ignoring files. gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
+* **[1.1 gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
-* **[1.2 Работа c Git. Команды.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
+* **[1.2 Git. Команды.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
     
-* **[1.3 Простой Git Flow для командной разработки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
+* **[1.3 Git Flow. Командная разработка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
 
 * **[1.4 Source Tree. Source Tree vs Terminal.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/source_tree.md)**
     
@@ -35,9 +35,9 @@ objc-dev-guides
 
 **4. Сборка. Сторонние библиотеки**
 
-* **[4.1 CocoaPods for managing third party (Управление сторонними библиотеками) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
+* **[4.1 CocoaPods. (Управление сторонними библиотеками)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
 
-* **[4.2. Podfile with recommended 3rd party (Рекомендуемые сторонние библиотеки) libraries.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+* **[4.2. Podfile. (Рекомендуемые сторонние библиотеки)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
 
 **5. Стандарты кодирования**
 
