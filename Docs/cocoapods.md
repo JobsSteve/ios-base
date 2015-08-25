@@ -120,6 +120,6 @@ pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :comm
 ```
 
 ```
-//Использование только отдельных подспеков для уменьшения бинарного билда
+//Использование `отдельных подспеков` для уменьшения бинарного билда
 pod 'AFNetworking', '~> 2.5.0', :subspecs => ['Serialization', 'Security', 'NSURLSession']
 ```
