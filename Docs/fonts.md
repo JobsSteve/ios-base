@@ -1,13 +1,13 @@
 Fonts-Tests
 ==
 
-1. Добавить папку с Fonts
+1. Добавить папку с Fonts в `project navigator`.
 
-2. Info.plist -> Fonts provided in application (добавить item-ы)
+2. `Info.plist` -> Fonts provided in application (добавить item-ы)
 
-3. Target -> Copy Bundles Resources (добавить файлы)
+3. Target -> `Copy Bundles Resource`s (добавить файлы)
 
-4. Метод для определения названия шрифтов (чтобы использовать в коде):
+4. Метод для `определения названия шрифтов` (чтобы использовать в коде):
 
 ```objc
 for (NSString* family in [UIFont familyNames]) {
@@ -19,9 +19,13 @@ for (NSString* family in [UIFont familyNames]) {
 ```
 
 
-5. Альтернатива, добавление через CoreText
+5. Альтернатива, добавление через `CoreText`
 
 ```objc
+//Fonts
+#import <CoreText/CoreText.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
 // Load custom fonts
 CTFontManagerRegisterFontsForURLs((__bridge CFArrayRef)((^{
     NSFileManager *fileManager = [NSFileManager defaultManager];
