@@ -1,4 +1,4 @@
-4. Podfile with recommended libs.
+4.2 Podfile with recommended libs.
 ==
 
 ### Podfile - сторонние библиотеки.
