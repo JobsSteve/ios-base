@@ -1,7 +1,7 @@
 
 ## 9. Graphic Assets.
 
-[Используем Asset Catalogs (Images.xcassets) в Xcode.](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html)
+Документация Apple про Asset Catalogs: [Используем Asset Catalogs (Images.xcassets) в Xcode.](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html)
 
 1. Должны включать файлы @2x и @3x размеров.
  
