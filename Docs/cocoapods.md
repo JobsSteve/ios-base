@@ -59,16 +59,19 @@ $ pod search MagicalRecord
 ```
 //Указать точную версию:
 pod 'SVProgressHUD', '0.9'
-
+```
+```
 //Установка платформы:
 platform :osx, ios '10.7'
-
+```
+```
 //Добавить таргеты:
 link_with 'MyApp', 'MyApp Tests'
-
+```
+```
 //Версия 0.3.7 и выше до 0.4:
 pod 'SWTableViewCell', '~> 0.3.7'
-
+```
 //Версия 0.1 и выше до 1.0:
 pod 'DDPageControl', '~> 0.1'
 
