@@ -28,7 +28,7 @@ Then, in your TTTAttributedLabelDelegate:
 
 TTTAttributedLabel is a fork of OHAttributedLabel.
 
-### IBDesignable TTTAttributedLabel (Чтобы использовать через IB)
+## IBDesignable TTTAttributedLabel (Чтобы использовать через IB)
 
 TTTAttributedLabel includes IBInspectable and IB_DESIGNABLE annotations to enable configuring the label inside Interface Builder. However, if you see these warnings when building...
 
