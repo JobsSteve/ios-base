@@ -3,9 +3,9 @@ Fonts-Tests
 
 1. Добавить папку с Fonts
 
-2. Info.plist -> Fonts provided in application
+2. Info.plist -> Fonts provided in application (добавить item-ы)
 
-3. Target -> Copy Bundles
+3. Target -> Copy Bundles Resources (добавить файлы)
 
 4. Метод для определения названия шрифтов (чтобы использовать в коде):
 
