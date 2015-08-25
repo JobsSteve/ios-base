@@ -41,6 +41,8 @@ objc-dev-guides
 
 **5. Стандарты кодирования**
 
+* **[5.1 CodeStyle. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/codestyle.md)**
+
 **6. Категории. Макросы. Тулзы.**
 
 * **[6.1 Categories. (Рабочие категории)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/worker_categories.md)**
@@ -214,7 +216,7 @@ objc-dev-guides
 
 [55. Convertations. Literals.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/convertations.md)
 
-[56. ]()
+**[56. Custom Fonts ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/fonts.md)**
 
 
 
