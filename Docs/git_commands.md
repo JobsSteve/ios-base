@@ -24,6 +24,16 @@ git push -u origin --tags # pushes up any tags
 
 ### Fetch dev branch and switch branch.
 
+You need to create a local branch that tracks a remote branch. The following command will create a local branch named daves_branch, tracking the remote branch origin/daves_branch. When you push your changes the remote branch will be updated.
+
+For earlier versions of git:
+```
+git checkout --track origin/daves_branch
+```
+For git 1.5.6.5 and higher:
+```
+git checkout --track -b origin/daves_branch
+```
 
 
 
