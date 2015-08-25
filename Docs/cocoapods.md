@@ -12,39 +12,35 @@
 
 ## Установка CocoaPods.
 
-Check that CocoaPods installed. You see `/usr/bin/pod` or `pod not found`.
+Проверка что CocoaPods установлен. Ожидаемы ответы `/usr/bin/pod` или `pod not found`
 * ```$ which pod```
 
-CocoaPods runs on Ruby, update RubyGems. 
+Поскольку CocoaPods написан на `Ruby`, обновляем `RubyGems`
 * ```$ sudo gem update --system```
 
-Install CocoaPods with RubyGems. 
-
+Устанавливаем Cocoapods через RubyGems
 * ```$ sudo gem install cocoapods```
 
-Clones the CocoaPods Specs repository into ~/.cocoapods/ on your computer. 
-
+Копируем CocoaPods Specs репозитория в ~/.cocoapods/ на систему
 * ```$ pod setup```
 
 ## Установка библиотек из Podfile-а.
 
-This will create a default Podfile for your project.
-
+Инициализация Podfile-a.
 * ```$ pod init```
 
-Create Podfile for your project.
-
+Создание Podfile-a в проект.
 * ```$ vim Podfile```
 
 Что бы закончить редактирование, нужно нажать <Esc> и ввести команду ```:wq``` (сохранить и выйти).
 
 ### Пример.
 
-Add libs to Podfile:
+Добавление библиотек в Podfile.
 ```
 platform:ios, '6.1'
-pod 'SVProgressHUD', '~>0.8'
-pod 'AFNetworking', '~>2.4'
+pod 'SVProgressHUD', '0.8'
+pod 'AFNetworking',  '=>2.4'
 pod 'MagicalRecord', '~>2.2'
 ```
 
@@ -53,6 +49,7 @@ Install dependencies to your project.
 
 ## Поиск библиотеки в Pod-aх.
 
+Поиск pod библиотек
 ```
 $ pod search MagicalRecord
 ```
