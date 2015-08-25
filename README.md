@@ -21,7 +21,7 @@ objc-dev-guides
 
 **2. Структура проекта.**
 
-* **[2.1 Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)
+* **[2.1 Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
 * [2.2 Альтернативная структура проекта.]()
 
 
