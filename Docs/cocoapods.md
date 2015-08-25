@@ -38,7 +38,7 @@ Create Podfile for your project.
 
 Что бы закончить редактирование, нужно нажать <Esc> и ввести команду ```:wq``` (сохранить и выйти).
 
-### Синтаксис.
+### Пример.
 
 Add libs to Podfile:
 ```
@@ -55,4 +55,50 @@ Install dependencies to your project.
 
 ```
 $ pod search MagicalRecord
+```
+
+## Синтаксис.
+
+```
+//Указать точную версию:
+pod 'SVProgressHUD', '0.9'
+
+//Установка платформы:
+platform :osx, ios '10.7'
+
+//Добавить таргеты:
+link_with 'MyApp', 'MyApp Tests'
+
+//Версия 0.3.7 и выше до 0.4:
+pod 'SWTableViewCell', '~> 0.3.7'
+
+//Версия 0.1 и выше до 1.0:
+pod 'DDPageControl', '~> 0.1'
+
+//Убрать вaрнинги в подах VK-ios-sdk:
+post_install do |installer_representation|
+    installer_representation.project.targets.each do |target|
+        if target.name == "Pods-VK-ios-sdk"
+            target.build_configurations.each do |config|
+                config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
+            end
+        end
+    end
+end
+
+//Берем файлы из локальной папки проекта:
+pod 'AFNetworking', :path => '~/Documents/AFNetworking'
+
+//Используем ветку `master` в репозитории:
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git'
+
+//Используем другую ветку в репозитории, например `develop`:
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :branch => 'dev'
+
+//Используем тэг (`tag`) в репозитории:
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :tag => '0.7.0'
+
+//Использовать до коммита:
+pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :commit => '082f8319af'
+
 ```
