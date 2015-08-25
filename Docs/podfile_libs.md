@@ -7,13 +7,19 @@
 platform:ios, '7.0'
 
 # UI
-pod 'SVProgressHUD',       '~>1.1.3'
-#pod 'DDPageControl',      '~>0.1'
-#pod 'TTTAttributedLabel', '~>1.13.1'
-#pod 'SVPullToRefresh',    '~>0.4.1'
+pod 'SVProgressHUD',          '1.1.3'
+#pod 'DDPageControl',         '0.1'
+#pod 'TTTAttributedLabel',    '1.13.1'
+#pod 'SVPullToRefresh',       '0.4.1'
+#pod 'SWTableViewCell',       '0.3.7'
+#pod 'ERJustifiedFlowLayout', :head
+#pod 'RMUniversalAlert',      '0.7'
+
+# Tools
+#pod 'PPTopMostController', '0.0.1'
 
 # Autolayouts
-# pod 'PureLayout'
+#pod 'PureLayout'
 
 # SlideMenu
 #pod 'SWRevealViewController'
@@ -22,32 +28,33 @@ pod 'SVProgressHUD',       '~>1.1.3'
 #pod 'RESideMenu'
 
 # Network
-pod 'AFNetworking',    '~>2.4'
-#pod 'JSONKit',        '~>1.4'
+pod 'AFNetworking',    '2.4'
+#pod 'JSONKit',        '1.4'
 #pod 'SocketRocket'
 
-# Caching
-#pod 'SDWebImage'
+# Web Image cache
+pod 'SDWebImage',      '3.7.3'
 
 # Database
-pod 'MagicalRecord',   '~>2.2'
+pod 'MagicalRecord',   '2.2'
 pod 'Realm'
 
 # Reactive programming
-#pod 'ReactiveCocoa',  '~>2.4.4'
-#pod 'BlocksKit',      '~>2.2.5'
+#pod 'ReactiveCocoa',  '2.4.4'
+#pod 'BlocksKit',      '2.2.5'
 
 # Model
-#pod 'Mantle',         '~>1.5.4'
+#pod 'Mantle',         '1.5.4'
 
 # Social
-#pod 'ShareKit',       '~>4.0.1'
+#pod 'ShareKit',       '4.0.1'
 
 # Graphics
-#pod 'CorePlot',       '~>1.5.1'
+#pod 'CorePlot',       '1.5.1'
 
 # Keychain
-#pod 'SFHFKeychainUtils',  '~>0.0.1'
+#pod 'SFHFKeychainUtils',  '0.0.1'
+#pod 'SSKeychain',         '1.2.3'
 
 # Logging
 #pod 'CocoaLumberjack'
@@ -60,11 +67,14 @@ pod 'Realm'
 #pod 'Kiwi'
 
 # Analytics
-#pod 'FlurrySDK',               '~>5.4.0'
-#pod 'GoogleAnalytics-iOS-SDK', '~>3.10'
+#pod 'FlurrySDK',               '5.4.0'
+#pod 'GoogleAnalytics-iOS-SDK', '3.10'
+#pod 'Mixpanel',                '2.8.2'
+#pod 'Appsflyer',               
 
 # Performance analytics
 #pod 'NewRelic'
+
 ```
 
 Downloading Dependencies
