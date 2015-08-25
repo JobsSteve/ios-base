@@ -1,5 +1,7 @@
+3.2 Graphic Assets.
+==
 
-## 9. Graphic Assets.
+## Assets Catalogs
 
 Документация Apple про Asset Catalogs: [Используем Asset Catalogs (Images.xcassets) в Xcode.](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html)
 
