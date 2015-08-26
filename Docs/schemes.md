@@ -215,9 +215,38 @@ https://github.com/2359media/ios-dev-guide
 
 [iOS Quick Tip: Managing Configurations With Ease](http://code.tutsplus.com/tutorials/ios-quick-tip-managing-configurations-with-ease--mobile-18324)
 
+### User Defaults
 
+Реюзается через `$(VK_APP_ID)`
 
+```
+VK_APP_ID
+AppStore
+Debug
+Release
 
+FB_APP_ID
+AppStore
+Debug
+Release
+
+BUNDLE_NAME_ID
+AppStore
+Debug
+Release
+
+PRODUCTN_NAME
+AppStore
+Debug
+Release
+```
+
+Preprocessor Macros:
+
+PRODUCTION
+DEBUG
+
+можно задавать поля вручную
 
 
 
