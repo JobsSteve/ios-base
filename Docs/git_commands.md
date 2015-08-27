@@ -35,6 +35,18 @@ For git 1.5.6.5 and higher:
 git checkout --track -b origin/daves_branch
 ```
 
+### Revert commit.
 
+можно отцепить последний коммит и перезаписать его новым, есть специальная последовательность команд
 
+```
+git reset --hard HEAD^
+git push -f //форсом  счищает как раз с remote
+```
+
+Реверт коммита
+
+```
+git revert HEAD
+```
 
