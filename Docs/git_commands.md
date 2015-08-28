@@ -54,4 +54,7 @@ git revert HEAD
 
 ### Rename commit message
 
+После можно посмотреть в гитлоге `git log`, что имя коммита поменялось.
+```
 git commit --amend -m "New commit message"
+```
