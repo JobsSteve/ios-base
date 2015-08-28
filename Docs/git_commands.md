@@ -52,3 +52,6 @@ git revert HEAD
 
 `!!!Xcode может мержить удалением куска кода/файла, поэтому нужно внимательно изучать каждый коммит, который пушиться в репу.`
 
+### Rename commit message
+
+git commit --amend -m "New commit message"
