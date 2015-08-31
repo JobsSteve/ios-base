@@ -82,7 +82,7 @@ objc-dev-guides
 
 
 
-**[8. Debug Logging. DLog.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug_logging.md)**
+**[8. Debug Logging. DLog. Логгирование в файл](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug_logging.md)**
 
 
 
