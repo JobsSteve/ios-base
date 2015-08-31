@@ -220,6 +220,14 @@ objc-dev-guides
 
 **[56. Custom Fonts ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/fonts.md)**
 
+### Fundamental Guides (Базовые гайды)
 
+[1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
 
+[2. Memory Management. Управление памятью.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mm.md)
 
+[3. Multithreading. Многопоточность.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/threads.md)
+
+[4. Degut. Отладка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug.md)
+
+[5. Git.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git.md)
