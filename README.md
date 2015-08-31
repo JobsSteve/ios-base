@@ -9,6 +9,7 @@ objc-dev-guides
 ### Base (Базовые гайды)
 
 **1. Git.**
+** gitignore. git commands. tracking. rebase. git flow. source tree.**
 
 * **[1.1 gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
     
