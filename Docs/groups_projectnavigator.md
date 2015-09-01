@@ -6,7 +6,7 @@
 
 ![Groups structure in Project Navigator] (https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/project_navigator_groups.png)
 
-* **App** имеет 8 подгрупп:
+* **App** имеет 10 подгрупп:
     * __Storyboards__: только `сториборды` и `LaunchScreen.xib` 
     
     * __Models__: все модели включая `классы CoreData` и `xcdatamodeld файл` модели бд.
