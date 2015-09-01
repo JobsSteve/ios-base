@@ -2,7 +2,7 @@
 ==
 
 ## Project Navigator
-Организация кода по группам в Project Navigator-е и в директориях проекта.
+Организация кода по группам в __Project Navigator__ и в директориях проекта.
 
 ![Groups structure in Project Navigator] (https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/project_navigator_groups.png)
 
