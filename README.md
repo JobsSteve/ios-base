@@ -16,7 +16,7 @@ objc-dev-guides
     
 * **[1.2 Git. Команды.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
     
-* [1.3 Git Flow. Командная разработка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)
+* **[1.3 Git Flow. Командная разработка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
 
 * [1.4 Source Tree. Source Tree vs Terminal.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/source_tree.md)
     
