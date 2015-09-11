@@ -62,7 +62,14 @@ self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 HomeController *homeVC = (HomeController *)_appDelegate.homeController;
 ```
 
+##Скрываем влияние Status Bar для Tableview
 
+```objc
+    //Скрываем влияние status bar-a для tableview
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+``` 
 
 
 

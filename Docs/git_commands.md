@@ -19,8 +19,6 @@ git push -u origin --all # pushes up the repo and its refs for the first time
 git push -u origin --tags # pushes up any tags
 ```
 
-### Rebase.
-
 
 ### Track. (Fetch origin/dev branch and switch to branch).
 
@@ -59,4 +57,8 @@ git revert HEAD
 git commit --amend -m "New commit message"
 ```
 
+
+### Rebase.
+
+1
 
