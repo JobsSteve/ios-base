@@ -29,5 +29,7 @@
 
 `Control-Command-Up` - quick toggle between h. and m. files.
 
+Zoom Storyboard - `Double+ Click`
+
 
 
