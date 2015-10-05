@@ -220,6 +220,8 @@ objc-dev-guides
 
 **[56. Custom Fonts ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/fonts.md)**
 
+[57. Localyzation](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/localyzation.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
