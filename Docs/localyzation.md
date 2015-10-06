@@ -31,6 +31,21 @@ If `language` is returning other values such a "fr-FR" and "fr-CA", then you sho
     } else {
     }
 
+## Проверка версий.
+
+При загрузке поверх - если версия поменялася с 1.1 до 1.1.1 то обнуляем настройки.
+
+```objc
+- (NSString *)appNameAndVersionNumberDisplayString {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *appDisplayName = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    NSString *majorVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSString *minorVersion = [infoDictionary objectForKey:@"CFBundleVersion"];
+    
+    return [NSString stringWithFormat:@"%@, Version %@ (%@)",
+            appDisplayName, majorVersion, minorVersion];
+}
+```
 
 
 
