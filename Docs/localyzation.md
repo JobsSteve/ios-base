@@ -47,6 +47,41 @@ If `language` is returning other values such a "fr-FR" and "fr-CA", then you sho
 }
 ```
 
+## Если новая версия (обнуляем первый запуск и сбрасываем настройки)
+
+```objc
+//Проверка версии чтобы изменить настройки (обнулить первый запуск) если версия новая
+    NSString *currentAppVersion = [self appVersionDisplayString];
+    NSString *oldAppVersion = [[JHUserDefaultHelper sharedInstance] getAppVersion];
+    
+    BOOL versionIsChanged = ![currentAppVersion isEqualToString:oldAppVersion];
+    if (versionIsChanged == YES) {
+        [[JHUserDefaultHelper sharedInstance] setIsSeconLaunch:NO];
+        [[JHUserDefaultHelper sharedInstance] setAppVersion:currentAppVersion];
+    }
+```
+
+## Установка языка при первом запуске
+
+```objc
+NSString *language = [[LANGUAGE componentsSeparatedByString:@"-"] firstObject];
+    BOOL isEnglish = [language isEqualToString:@"en"];
+    BOOL isRussian = [language isEqualToString:@"ru"];
+    
+    if (isRussian == NO && isEnglish == NO) {
+        language = @"en";
+    }
+    
+    NSLog(@"Перепроверяем язык телефона: %@", language);
+    
+    if (![[JHUserDefaultHelper sharedInstance] getIsSeconLaunch]) {
+        [[JHUserDefaultHelper sharedInstance] setAppLanguage:language];
+        [[JHUserDefaultHelper sharedInstance] setAppCurrency:EUR];
+        [[JHUserDefaultHelper sharedInstance] setIsSeconLaunch:YES];
+        [[JHUserDefaultHelper sharedInstance] setUserPhone:@"temp"];
+    }
+```
+
 ## Скрипт инкрементирования номера билда.
 
 Код/Скрипт который на каждом новом запуске билда меняет номер билда
