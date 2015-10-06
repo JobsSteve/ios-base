@@ -1,13 +1,13 @@
 12. Tools. Классы Helpers.
 ==
 
-## AIRAppTheme
+## ARTAppTheme
 Tools - AppTheme для работы с темами: (цвета и шрифты).
 
 ```objc
-@interface AIRAppTheme : NSObject
+@interface ARTAppTheme : NSObject
 
-+(AIRAppTheme *)shared;
++(ARTAppTheme *)shared;
 
 -(UIFont *)appFont;
 -(UIColor *)blueBackgroundColor;
@@ -26,17 +26,17 @@ Tools - AppTheme для работы с темами: (цвета и шрифт�
 ```
 
 ```
-#import "FTGAppTheme.h"
+#import "ARTAppTheme.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-@interface FTGAppTheme ()
+@interface ARTAppTheme ()
 @end
 
-@implementation FTGAppTheme
+@implementation ARTAppTheme
 
 + (instancetype)shared {
     static FTGAppTheme *_shared = nil;
@@ -106,10 +106,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 @end
 ```
 
-### Работа с AIRAppTheme
+### Работа с ARTAppTheme
 
 ```objc
-[FTGAppTheme shared] blueBackgroundColor]
+[ARTAppTheme shared] blueBackgroundColor]
 [_loadButton setBackgroundColor:[[FTGAppTheme shared] grayBackgroundColor]];
 ```
 
