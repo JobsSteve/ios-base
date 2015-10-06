@@ -21,7 +21,15 @@ http://code.tutsplus.com/tutorials/ios-sdk-localization-with-nslocalizedstring--
 
 
 
+## Проверка локализации на устройстве.
 
+If `language` is returning other values such a "fr-FR" and "fr-CA", then you should split `language` on the `-` character. This will work even you simply get "fr".
+
+    NSString *firstLanguage = [[NSLocale preferredLanguages] firstObject];
+    NSString *language = [[firstLanguage componentsSeparatedByString:@"-"] firstObject];
+    if ([language isEqualToString:@"fr"]) {
+    } else {
+    }
 
 
 
