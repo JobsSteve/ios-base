@@ -47,7 +47,9 @@ If `language` is returning other values such a "fr-FR" and "fr-CA", then you sho
 }
 ```
 
+## Скрипт инкрементирования номера билда.
 
+Код/Скрипт который на каждом новом запуске билда меняет номер билда
 
 
 
