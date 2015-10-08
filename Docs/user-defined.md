@@ -2,7 +2,9 @@
 User-Defined
 ==
 
-###Хранение User-Define-a в plist-e
+### Хранение в плисте (Info.plist)
+
+В Info.plist определяем как: `MAIN_URL`
 
 ```
 //объявляем define
