@@ -10,7 +10,7 @@ User-Defined
 //объявляем define
 #define MAIN_URL [[[NSBundle mainBundle] infoDictionary] objectForKey:@"MAIN_URL"]
 
-//Выводим в консоль, поскольку через po print не работает
+//Выводим в консоль, поскольку через (po print) не выводится
 NSLog(@"MAIN_URL = %@", MAIN_URL);
 ```
 
