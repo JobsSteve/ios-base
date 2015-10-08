@@ -222,6 +222,10 @@ objc-dev-guides
 
 **[57. Localization](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/localyzation.md)**
 
+[58. Adaptation to iOS9](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ios9.md)
+
+[59. ]()
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
