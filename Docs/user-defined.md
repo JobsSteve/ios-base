@@ -4,7 +4,7 @@ User-Defined
 
 ### Хранение в плисте (Info.plist)
 
-В Info.plist определяем как: `MAIN_URL`
+В *Info.plist определяем как: `MAIN_URL`
 
 ```
 //объявляем define
