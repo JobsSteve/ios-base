@@ -226,7 +226,8 @@ objc-dev-guides
 
 [59. Preprocessor (Препроцессор) ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/preprocessor.md)
 
-[60. ]()
+[60. User-Defined](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/userdefined.md)
+
 
 ### Fundamental Guides (Фундаментальные основы)
 
