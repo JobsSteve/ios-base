@@ -224,7 +224,9 @@ objc-dev-guides
 
 [58. Adaptation to iOS9](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ios9.md)
 
-[59. ]()
+[59. Preprocessor (Препроцессор) ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/preprocessor.md)
+
+[60. ]()
 
 ### Fundamental Guides (Фундаментальные основы)
 
