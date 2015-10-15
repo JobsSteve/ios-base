@@ -228,7 +228,7 @@ objc-dev-guides
 
 **[60. User-Defined](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/user-defined.md)**
 
-[61. Скрипты. Scripts. Скрипт для инкрементирования билда.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/script.md)
+[61. Скрипты. Scripts. Скрипт для инкрементирования билда.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scripts.md)
 
 [62. Use of terms. Пользовательское соглашение.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/useofterms.md)
 
