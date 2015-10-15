@@ -3,7 +3,7 @@
 
 ##Скрипт для инкрементирования билда
 
-`Target` > `Build Phases` > `+` > `Run Script` > Наименуем как: `Increment Build Version Run Script`
+`Target` > `Build Phases` > `+` > `Run Script` > Именуем как: `Increment Build Version Run Script`
 
 ```objc
 releaseConfig="Release"
