@@ -198,7 +198,7 @@ objc-dev-guides
 
 [45. UIPageViewController. DDPageControl+UIScrollView](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
 
-**[46. Popup Control. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/popups.md)**
+**[46. Popup Control. Попап экран поверх всех экранов (Водительская лицензия, Попап звонка). Независимый экран который может отображаться в любом месте. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/popups.md)**
 
 [47. Permissions. Camera permission. Transition to Camera Settings if pemission is not enabled. enabled.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/permissions.md)
 
