@@ -3,6 +3,8 @@
 
 ##Скрипт для инкрементирования билда
 
+Скрипт хорош тем что инкрементирует при архивировании.
+
 `Target` > `Build Phases` > `+` > `Run Script` > Именуем как: `Increment Build Version Run Script`
 
 ```objc
