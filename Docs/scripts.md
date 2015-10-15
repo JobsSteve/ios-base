@@ -3,7 +3,7 @@
 
 ##Скрипт для инкрементирования билда
 
-Скрипт хорош тем что инкрементирует при архивировании, а не при билде.
+Скрипт хорош тем что __инкрементирует при архивировании__, а не при билде.
 
 `Target` > `Build Phases` > `+` > `Run Script` > Именуем как: `Increment Build Version Run Script`
 
@@ -16,6 +16,12 @@ buildNumber=$(($buildNumber + 1))
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "${PROJECT_DIR}/${INFOPLIST_FILE}"
 fi
 ```
+
+Скрипт в картинке:
+
+![Increment Build Version Run Script] (https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/incrementing_script.png)
+
+
 
 
 
