@@ -230,7 +230,7 @@ objc-dev-guides
 
 **[61. Скрипты. Scripts. Скрипт для инкрементирования билда.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scripts.md)**
 
-[62. Use of terms. Пользовательское соглашение.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/termsofuse.md)
+**[62. Use of terms. Пользовательское соглашение.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/termsofuse.md)**
 
 
 ### Fundamental Guides (Фундаментальные основы)
