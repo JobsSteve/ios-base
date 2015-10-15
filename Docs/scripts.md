@@ -1,28 +1,19 @@
-54. Array
+61. Скрипты. Scripts
 ==
 
-## Check for nil and for empty
+##Скрипт для инкрементирования билда
+
+Target > Build Phases > + > Run Script > Наименуем как: `Increment Build Version Run Script`
 
 ```objc
-if (!array || !array.count) {
-  ...
-}
-
-if (array == nil || [array count] == 0) {
-    ...
-}
-
+releaseConfig="Release"
+if [ "$releaseConfig" = "${CONFIGURATION}" ]; then
+echo incrementing build ver
+buildNumber=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PROJECT_DIR}/${INFOPLIST_FILE}")
+buildNumber=$(($buildNumber + 1))
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "${PROJECT_DIR}/${INFOPLIST_FILE}"
+fi
 ```
-
-`!array` - check for nil
-
-`!array.count` - check for empty
-
-That checks if array is not nil, and if not - check if it is not empty.
-
-
-
-
 
 
 
