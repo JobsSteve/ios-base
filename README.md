@@ -232,6 +232,8 @@ objc-dev-guides
 
 **[62. Use of terms. Пользовательское соглашение.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/termsofuse.md)**
 
+**[63. Location.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/location.md)**
+
 
 ### Fundamental Guides (Фундаментальные основы)
 
