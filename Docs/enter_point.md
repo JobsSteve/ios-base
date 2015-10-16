@@ -4,6 +4,11 @@
 ## Foreground. Background.
 
 ```objc
+- (void)applicationDidEnterBackground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
+- (void)applicationWillEnterForeground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
+```
+
+```objc
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     UIApplication.sharedApplication.applicationIconBadgeNumber = 0;
     [[DTApi instance] applicationWillResignActive];
