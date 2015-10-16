@@ -4,7 +4,7 @@ objc-dev-guides
 **objc-dev-guides** - best practices for development and quickly starting the new projet.
 (Лучшие практики разработки проектов на objective-c).
 
-[Apple Developer Guides](https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides)
+__[Ccылка на Apple Developer Guides](https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides)__
 
 ## Objective-C Development Guides
 
