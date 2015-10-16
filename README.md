@@ -236,6 +236,10 @@ objc-dev-guides
 
 **[64. AppDelegate - Enter point to app. Точка входа в приложение. Выход из Фона/Бэкграунда режима. Логика при входе в приложение. приложения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/enter_point.md)**
 
+[65. KVO. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
+
+[]()
+
 
 
 ### Fundamental Guides (Фундаментальные основы)
