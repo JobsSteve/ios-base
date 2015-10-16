@@ -1,7 +1,7 @@
 63. AppDelegate - точка входа в приложение
 ==
 
-## How to check location service for enable/disable
+## How to check location service is enable/disable
 
 ```objc
     if([CLLocationManager locationServicesEnabled]&&
