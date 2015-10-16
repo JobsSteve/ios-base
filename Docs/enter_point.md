@@ -4,9 +4,20 @@
 ## Foreground. Background.
 
 ```objc
+//Выход в бэкграунд
 - (void)applicationDidEnterBackground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
+```
+
+```objc
+//Выход из фореграунда (фона)
 - (void)applicationWillEnterForeground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
 ```
+
+```objc
+//Вход в активное состояние
+- (void)applicationDidBecomeActive:(UIApplication *)application;
+```
+
 
 ```objc
 - (void)applicationDidEnterBackground:(UIApplication *)application {
