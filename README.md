@@ -234,6 +234,9 @@ objc-dev-guides
 
 **[63. Location.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/location.md)**
 
+**[64. AppDelegate. Точка входа в приложение. Выход из Фона/Бэкграунда режима. Логика при входе в приложение. приложения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/enter_point.md)**
+
+
 
 ### Fundamental Guides (Фундаментальные основы)
 
