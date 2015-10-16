@@ -1,4 +1,4 @@
-63. AppDelegate - точка входа в приложение. Foreground. Background.
+64. AppDelegate - точка входа в приложение. Foreground. Background.
 ==
 
 ## Foreground. Background.
