@@ -169,6 +169,38 @@ static DTRootTabBarController *_instance;
 }
 ```
 
+## Combine TabBarController and NavigationController
 
+```objc
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    UIViewController *firstViewController = [[UIViewController alloc] init];
+    UIViewController *secondViewController = [[UIViewController alloc] init];
+    UIViewController *thirdViewController = [[UIViewController alloc] init];
+
+       UITabBarController *tabBarController = [[UITabBarController alloc] init];        
+       tabBarController.viewControllers = @[firstViewController, secondViewController, thirdViewController];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    return YES;
+}
+```
+
+## Use MainTabBarController from Storyboard
+
+```objc
+//Transition to MainTabBarController
+- (IBAction)okButtonTapped:(id)sender
+{
+    DTMainTabBarViewController *mainTabBar = [self.storyboard instantiateViewControllerWithIdentifier:@"DTMainTabBarViewController"];
+    
+    DTAppDelegate *appDelegate = (DTAppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [appDelegate.window setRootViewController:mainTabBar];
+}
+```
 
 
