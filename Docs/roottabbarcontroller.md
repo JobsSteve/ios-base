@@ -189,7 +189,7 @@ static DTRootTabBarController *_instance;
 }
 ```
 
-## Use MainTabBarController from Storyboard
+## Use MainTabBarController from Storyboard with AppDelegate
 
 ```objc
 //Transition to MainTabBarController
