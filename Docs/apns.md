@@ -30,6 +30,8 @@ payloads (полезная нагрузка).
 
 https://github.com/stefanhafeneger/PushMeBaby
 
+[PushMeBaby](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/pushmebaby.md)
+
 ## Настройка Provisioning Profiles и APNS Сертификатов
 
 
