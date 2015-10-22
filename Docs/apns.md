@@ -26,7 +26,12 @@ payloads (полезная нагрузка).
 
 Полезная назгрузка - это словарь(dictionary) который состоит по крайней мере из одной пары - ("ключ" - "значение").
 
-## Provisioning Profiles и Сертификаты
+## Дебаг Push notifications
+
+https://github.com/stefanhafeneger/PushMeBaby
+
+## Настройка Provisioning Profiles и APNS Сертификатов
+
 
 
 
