@@ -27,11 +27,20 @@ payloads (полезная нагрузка).
 
 ## Дебаг Push notifications
 
-https://github.com/stefanhafeneger/PushMeBaby
+https://pushbots.com (Сервис для проверки Push-уведомлений).
 
-![PushMeBaby](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/pushmebaby.png)
+https://github.com/stefanhafeneger/PushMeBaby.
 
-## Настройка Provisioning Profiles и APNS Сертификатов
+![PushMeBaby](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/pushmebaby.png).
+
+## Настройка Provisioning Profiles и APNS Сертификатов.
+
+APNS Production + Certificate.SigningRequest = aps_production.p12 (сертификат для сервера).
+
+Создание APNS-сертификатов происходит внутри AppID - включается опция "push notifications".
+
+
+
 
 
 
