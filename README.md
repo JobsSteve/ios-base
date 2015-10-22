@@ -57,7 +57,6 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 * **[7.1 Crash Report Services. (Crittercism, Crashlytics)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/crash_report.md)**
 
-
 **8. Архитектура и Сервисы.**
 
 **9. Работа с Xcode.**
@@ -71,8 +70,6 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 **10. Работа с Константами.**
 
 **11. База данных.**
-
-
 
 **12. Антипаттерны.**
 
@@ -92,7 +89,6 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 
 
-
 [14. Scripts. (Automatically push build to TestFlight)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scripts_push_build_testflight.md).
 
 [15. Storing data (secrets and tokens) securely in the key chain.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/securely_store_data.md)
@@ -106,7 +102,6 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 [20. SettingsManager (первый запуск, последняя дата обновления базы, какие-то настройки.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/settings.md)
 
 **[21. Snippets. (Набор мелких решений)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/snippets.md)**
-
 
 ### Additional (Расширенные гайды)
 
@@ -178,7 +173,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [34. Reactive Functional Programming. ReactiveCocoa](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/reactive_programming.md)
 
-[35. Push Notifications. APNS.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/apns.md)
+**[35. Push Notifications. APNS.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/apns.md)**
 
 [36. Antipatterns and Patterns.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/antipatterns.md)
 
@@ -241,8 +236,6 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 [65. KVO. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
 
 []()
-
-
 
 ### Fundamental Guides (Фундаментальные основы)
 
