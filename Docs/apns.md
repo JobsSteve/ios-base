@@ -6,17 +6,16 @@
 Получение сообщения о каком-то важном действии (дверь в офис открыта, обед готов, получен ответ с сервисе).
 
 Push-уведомление:
-1. короткий текст
-2. звуковой сигнал
-3. номер бейджа на иконке
-
+* 1. короткий текст
+* 2. звуковой сигнал
+* 3. номер бейджа на иконке
 
 Cхема работы механики push-уведомлений:
 
-1. Регистрация для получения push notifications.
-2. iOs запрашивает токен девайса у APNS и получает токен девайса.
-3. Приложение отправляет токен на сервер.
-4. Когда произойдет `СОБЫТИЕ`, сервер отправит push notifications в APNS.
+* 1. Регистрация для получения push notifications.
+* 2. iOs запрашивает токен девайса у APNS и получает токен девайса.
+* 3. Приложение отправляет токен на сервер.
+* 4. Когда произойдет `СОБЫТИЕ`, сервер отправит push notifications в APNS.
 
 Фоновое выполнение - только для навигации, VOIP и воспроизведение звука.
 
@@ -30,7 +29,7 @@ payloads (полезная нагрузка).
 
 https://github.com/stefanhafeneger/PushMeBaby
 
-[PushMeBaby](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/pushmebaby.md)
+![PushMeBaby](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/pushmebaby.png)
 
 ## Настройка Provisioning Profiles и APNS Сертификатов
 
