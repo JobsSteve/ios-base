@@ -173,7 +173,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [34. Reactive Functional Programming. ReactiveCocoa](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/reactive_programming.md)
 
-**[35. Push Notifications. APNS.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/apns.md)**
+**[35. Push Notifications. APNS. AIPushService](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/apns.md)**
 
 [36. Antipatterns and Patterns.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/antipatterns.md)
 
