@@ -133,7 +133,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[14. ViewController. Popups. Pass data between controllers. Perform Segues.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller.md)**
 
-**[15. UIView. UIView with NIB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)**
+**[15. UIView. UIView with NIB. Designable View.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uiview.md)**
 
 [16. Delegation vs. Notification.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/delegation-notification.md)
 
