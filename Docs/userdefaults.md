@@ -59,6 +59,8 @@ If the user restores backup data to a new device or reinstalls the operating sys
 
 Структура push-нотификации:
 
+## Helper class для NSUserDefaults.
+
 
 
 
