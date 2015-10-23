@@ -191,7 +191,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [43. Sizes. Frames. Bounds.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/sizes.md)
 
-[44. User Defaults. Helper class.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/userdefaults.md)
+**[44. User Defaults. Helper class. Changing logic version/token/settings.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/userdefaults.md)**
 
 [45. UIPageViewController. DDPageControl+UIScrollView](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/pageviewcontroller.md)
 
