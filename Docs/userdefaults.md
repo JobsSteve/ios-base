@@ -17,7 +17,7 @@
 
 ## Если девайс-токен изменился. Методы для AIPushService
 
-```
+```objc
 //При получении девайс-токена (сохраняем как текущий токен)
 - (void)saveCurrentTokenInDefault {
     [[NSUserDefaults standartDefaults] setObject: token ForKey: @"CurrentDeviceToken"];
@@ -50,6 +50,15 @@
     }
 }
 ```
+
+## Когда меняется девайс-токен
+
+If the user restores backup data to a new device or reinstalls the operating system, the device token changes.
+
+## Переход в нужный экран (контроллер), когда открываем push-нотификацию
+
+Структура push-нотификации:
+
 
 
 
