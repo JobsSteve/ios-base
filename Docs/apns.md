@@ -39,11 +39,46 @@ APNS Production + Certificate.SigningRequest = aps_production.p12 (сертиф�
 
 Создание APNS-сертификатов происходит внутри AppID - включается опция "push notifications".
 
+## Проверка сертификата через PushBoats
 
+* 1. Загрузить библиотеку через CocoaPods:
+```objc
+pod 'Pushbots'
+```
 
+* 2. В AppDelegate импортировать библиотеку:
+```objc
+#import <Pushbots/Pushbots.h>
+```
 
+* 3. На запуске приложения добавить:
+```objc
+- (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
+{
+    //PUSHBOTS
+    [Pushbots sharedInstanceWithAppId:@"562a0d441779591b668b4569"];
+    [[Pushbots sharedInstance] receivedPush:launchOptions];
+    
+    return YES;
+}
+```
 
+* 4. Добавить в методе регистрации Push notifications и получением токена.
+```objc
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    //PUSHBOTS
+    [[Pushbots sharedInstance] registerOnPushbots:deviceToken];
+}
+```
 
+* 5. В этом методе получаем Push notifications в виде словаря. 
+```objc
+- (void)application:(UIApplication *)app didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    NSLOG(@"Push Notification = %@", userInfo);
+}
+```
 
 
 
