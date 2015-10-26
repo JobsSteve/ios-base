@@ -241,6 +241,10 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [68. Bug report mail. UIViewController+Mail.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mail.md)
 
+[69. Router.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/router.md)
+
+[70. Проблема с UIAlertView.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alert_view.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
