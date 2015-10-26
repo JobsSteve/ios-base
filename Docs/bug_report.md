@@ -31,7 +31,7 @@ NSString* deviceName()
 }
 ```
 The result should be:
-
+```
 @"i386"      on 32-bit Simulator
 @"x86_64"    on 64-bit Simulator
 @"iPod1,1"   on iPod Touch
@@ -65,6 +65,7 @@ The result should be:
 @"iPhone7,2" on iPhone 6
 @"iPhone8,1" on iPhone 6S
 @"iPhone8,2" on iPhone 6S Plus
+```
 
 
 
