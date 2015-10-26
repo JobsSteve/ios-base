@@ -235,7 +235,11 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [65. KVO. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
 
-**[66. Bug report. Get device version.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/bug_report.md)**
+**[66. Get device version. Device metadata](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/bug_report.md)**
+
+[67. ActionSheet. UIViewController+Share.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/actionsheet.md)
+
+[68. Bug report mail. UIViewController+Mail.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mail.md)
 
 ### Fundamental Guides (Фундаментальные основы)
 
