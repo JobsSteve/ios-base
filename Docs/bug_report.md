@@ -9,12 +9,16 @@ EITHER try this library: http://github.com/erica/uidevice-extension/ (by Erica S
 
 (Sample Code):
 
+```objc
 [[UIDevice currentDevice] platformType]   // ex: UIDevice4GiPhone
 [[UIDevice currentDevice] platformString] // ex: @"iPhone 4G"
+```
+
 OR You can use this method:
 
 You can get the device model number using uname from sys/utsname.h. For example:
 
+```objc
 #import <sys/utsname.h> // import it in your header or implementation file.
 
 NSString* deviceName()
@@ -25,6 +29,7 @@ NSString* deviceName()
     return [NSString stringWithCString:systemInfo.machine
                               encoding:NSUTF8StringEncoding];
 }
+```
 The result should be:
 
 @"i386"      on 32-bit Simulator
