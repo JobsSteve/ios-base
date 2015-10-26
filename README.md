@@ -235,7 +235,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [65. KVO. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
 
-[]()
+[66. Bug report. Get device version.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/bug_report.md)
 
 ### Fundamental Guides (Фундаментальные основы)
 
