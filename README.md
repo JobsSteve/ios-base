@@ -245,6 +245,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [70. Проблема с UIAlertView.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alert_view.md)
 
+[71. Мобильная статистика. Mixpanel. Appsflyer](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mobile_statistics.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
