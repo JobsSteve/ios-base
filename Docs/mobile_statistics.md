@@ -15,17 +15,17 @@ Track of the number of active users of an application - активные юзе�
 Why feature is underused - почему фича не используется.
 
 
-* 1. Pod
+__1. Pod__
 ```
 pod 'Mixpanel'
 ```
 
-//Добавить библиотеку
+__2. Добавить библиотеку__
 ```
 #import "Mixpanel.h"
 ```
 
-* 2. On launch
+__3. On launch__
 ```
 #define MIXPANEL_TOKEN @"YOUR_TOKEN"
 
