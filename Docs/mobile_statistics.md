@@ -38,7 +38,7 @@ Mixpanel *mixpanel = [Mixpanel sharedInstance];
 ```
 
 
-* 3. Send events
+__4. Send events__
 ```objc
 Mixpanel *mixpanel = [Mixpanel sharedInstance];
 
