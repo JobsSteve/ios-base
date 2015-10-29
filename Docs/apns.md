@@ -83,6 +83,8 @@ pod 'Pushbots'
 }
 ```
 
+## iOS 8 & iPhone 6 No Push Notifications Appearing
+
 
 
 
