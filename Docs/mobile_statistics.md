@@ -6,12 +6,15 @@
 https://mixpanel.com/help/reference/ios
 
 Основные метрики:
+
 Cutomer retention - удержание пользователей.
+
 Customer engagement - привлечение пользователей.
 
 Track of the number of active users of an application - активные юзеры.
 
 Вопросы:
+
 Why feature is underused - почему фича не используется.
 
 
