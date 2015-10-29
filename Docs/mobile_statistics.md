@@ -15,7 +15,7 @@ Track of the number of active users of an application - активные юзе�
 Why feature is underused - почему фича не используется.
 
 
-//Pod
+* 1. Pod
 ```
 pod 'Mixpanel'
 ```
@@ -25,7 +25,7 @@ pod 'Mixpanel'
 #import "Mixpanel.h"
 ```
 
-//On launch
+* 2. On launch
 ```
 #define MIXPANEL_TOKEN @"YOUR_TOKEN"
 
@@ -36,9 +36,9 @@ pod 'Mixpanel'
 // Later, you can get your instance with
 Mixpanel *mixpanel = [Mixpanel sharedInstance];
 ```
-## Appsflyer
 
-//Send events
+
+* 3. Send events
 ```objc
 Mixpanel *mixpanel = [Mixpanel sharedInstance];
 
@@ -60,7 +60,7 @@ Mixpanel *mixpanel = [Mixpanel sharedInstance];
 
 
 
-
+## Appsflyer
 
 
 
