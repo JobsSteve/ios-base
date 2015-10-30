@@ -1,23 +1,9 @@
-30. Coding Style
+Code Smells in objc
 ==
 
-## Оформление импортов (#imports)
+1. [4 Ways Precompiled Headers Cripple Your Code](http://qualitycoding.org/precompiled-headers/)
 
-```objc
-//API
-#import "SHGAPIManager+Fines.h"
-#import "SHGAPIManager+Order.h"
-
-//Models
-#import "BOrder.h"
-#import "BPayform.h"
-
-//MagicalRecord
-#import "CoreData+MagicalRecord.h"
-
-//Controllers
-#import "SHGConfirmOrderController.h"
-```
+2. [Code Smells in Objective-C](http://qualitycoding.org/objective-c-code-smells/)
 
 
 
