@@ -249,6 +249,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[72. Code Smells in ObjC](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/code_smells.md)**
 
+[73. Apple Developer Account](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/developer_apple.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
