@@ -251,6 +251,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [73. Apple Developer Account](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/developer_apple.md)
 
+[74. Ошибки планирования. Планирование разработки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/planning.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
