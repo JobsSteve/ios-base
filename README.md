@@ -253,6 +253,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [74. Ошибки планирования. Планирование разработки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/planning.md)
 
+[75. ScrollView. DDPageControl+UIScrollView. (Image gallery, Tutorial) ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scrollview.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
