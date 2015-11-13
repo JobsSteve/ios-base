@@ -103,6 +103,18 @@ pod 'Pushbots'
 
 После того, как обновили APNS нужно поменять provision profile.
 
+
+## Обнуление бейджа иконки при активировании приложения
+
+If your app becomes active again and is still in the background you should reset the badge count in `-applicationDidBecomeActive:` as well:
+```
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    application.applicationIconBadgeNumber = 0;
+}
+```
+If your app is still running in the background `-application:didFinishLaunchingWithOptions:` won't be called.
+
 ## Вопросы:
 
 1. Может ли не работать APNS для отправки пушей если на сервере много невалидных девайс токенов? (Тоесть сервер замусорен девайс токенами).
