@@ -115,9 +115,17 @@ If your app becomes active again and is still in the background you should reset
 ```
 If your app is still running in the background `-application:didFinishLaunchingWithOptions:` won't be called.
 
+
+## Получение DeviceID для управление какие push-токен удалить, а какие добавить
+
+```objc
+UIDevice *device = [UIDevice currentDevice];
+NSString  *currentDeviceId = [[device identifierForVendor]UUIDString];
+```
 ## Вопросы:
 
 1. Может ли не работать APNS для отправки пушей если на сервере много невалидных девайс токенов? (Тоесть сервер замусорен девайс токенами).
+2. 
 
 
 
