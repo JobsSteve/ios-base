@@ -26,6 +26,10 @@ payloads (полезная нагрузка).
 
 ## Дебаг Push notifications
 
+## Плохие и хорошие кейсы использовать пуш-нотификации
+
+http://blog.goodbarber.com/The-Right-and-Wrong-Way-to-Use-Push-Notifications_a431.html
+
 https://pushbots.com (Сервис для проверки Push-уведомлений).
 
 https://github.com/stefanhafeneger/PushMeBaby.
