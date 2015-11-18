@@ -126,6 +126,14 @@ If your app is still running in the background `-application:didFinishLaunchingW
 UIDevice *device = [UIDevice currentDevice];
 NSString  *currentDeviceId = [[device identifierForVendor]UUIDString];
 ```
+
+
+## Можно ли передавать через пуш-нотификацию - id-шники.
+
+
+
+
+
 ## Вопросы:
 
 1. Может ли не работать APNS для отправки пушей если на сервере много невалидных девайс токенов? (Тоесть сервер замусорен девайс токенами).
