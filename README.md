@@ -247,9 +247,9 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[71. Мобильная статистика. Mixpanel. Appsflyer](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mobile_statistics.md)**
 
-**[72. Code Smells in ObjC](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/code_smells.md)**
+**[72. Code Smells in ObjC.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/code_smells.md)**
 
-[73. Apple Developer Account](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/developer_apple.md)
+[73. Apple Developer Account.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/developer_apple.md)
 
 **[74. Ошибки планирования. Планирование разработки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/planning.md)**
 
@@ -257,12 +257,12 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 ### Fundamental Guides (Фундаментальные основы)
 
-[1. ООП. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
+[1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
 
-[2. Memory Management. Управление памятью.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mm.md)
+[2. Memory Management. Управление памятью. Блоки.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mm.md)
 
 [3. Multithreading. Многопоточность.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/threads.md)
 
-[4. Degut. Отладка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug.md)
+[4. Debug. Отладка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug.md)
 
-[5. Git.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git.md)
+[5. Git. Git Autocomplete.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git.md)
