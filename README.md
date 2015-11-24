@@ -121,7 +121,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[8. RootTabBarController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/roottabbarcontroller.md)**
 
-**[9. Controller hierarchy. RootController. Autorotations. StatusBar.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller_hierarchy.md)**
+**[9. Controller hierarchy. Navigation hierarchy. RootController(AbstarctController). Autorotations. StatusBar.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/controller_hierarchy.md)**
 
 **[10. Models. Mantle. description and debugDescription. Design. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/models.md)**
 
