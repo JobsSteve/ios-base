@@ -133,6 +133,38 @@ NSString  *currentDeviceId = [[device identifierForVendor]UUIDString];
 
 
 
+### Как перевести бинарник пуш-токена из NSString обратно в NSData
+
+```objc
+NSString *device = @"<1ab78242 b77f5522 9986cc72 a2a01fc7 167d9fd1 66500d3e 9fe074db 26d685e7>";
+const char *ptr = [device cStringUsingEncoding:NSUTF8StringEncoding];
+NSMutableData *data = [NSMutableData data];
+    
+   while (*ptr) {
+        unsigned char c1 = *ptr;
+        ptr++;
+        if (isalpha(c1))
+            c1 = (10 + c1 - 'a')<<4;
+        else if (isnumber(c1))
+            c1 = (c1 - '0')<<4;
+        else
+            continue;
+        if (!*ptr)
+            break; // Shouldn't occure -- bad input
+        unsigned char c2 = *ptr;
+        ptr++;
+        if (isalpha(c2))
+            c2 = 10 + c2 - 'a';
+        else if (isnumber(c2))
+            c2 = c2 - '0';
+        c1 = c1 | c2;
+        [data appendBytes:&c1 length:1];
+    }
+    
+    //Где это может понадобиться
+    //[[Pushbots sharedInstance] registerOnPushbots:[data copy]];
+```
+
 
 ## Вопросы:
 
