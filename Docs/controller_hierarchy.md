@@ -1,4 +1,4 @@
-21. Controller hierarchy. RootController. RootNavigationController. RootTabBarController. Autorotation. StatusBar. AppDelegate.
+21. Controller hierarchy. Navigation hierarchy.  RootController. RootNavigationController. RootTabBarController. Autorotation. StatusBar. AppDelegate.
 ==
 
 ##Status Bar (Lighten)
@@ -50,7 +50,7 @@ if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateAc
 }
 ```
 
-###AppDelegate
+### AppDelegate
 
 ```objc
 #import "AppDelegate.h"
@@ -71,6 +71,29 @@ HomeController *homeVC = (HomeController *)_appDelegate.homeController;
     self.automaticallyAdjustsScrollViewInsets = NO;
 ``` 
 
+## PPTopMostController - получение последнего на экране контроллера
 
+PPTopMostController - поставляется как сторонняя библиотека.
 
+Добавление в Podfile
+```
+pod 'PPTopMostController'
+```
+
+Импортируется как
+```objc
+#import "UIViewController+PPTopMostController.h"
+```
+
+Использовать можно следующим образом:
+```objc
+//Сохранять в свойство (глобально)
+@property (weak, nonatomic) UIViewController *topMostController;
+
+//Сохранять локально (использовать локально в методе)
+UIViewController *previousController = [UIViewController topMostController];
+
+//Логать и следить в потоке
+DTLog(@"TOP MOST CONTROLLER = %@", [UIViewController topMostController]);
+```
 
