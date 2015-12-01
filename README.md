@@ -225,7 +225,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[62. Use of terms. Пользовательское соглашение.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/termsofuse.md)**
 
-**[63. Location.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/location.md)**
+**[63. Location. Location Permissions. LocationService.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/location.md)**
 
 **[64. AppDelegate - Enter point to app. Точка входа в приложение. Выход из Фона/Бэкграунда режима. Логика при входе в приложение. приложения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/enter_point.md)**
 
