@@ -251,6 +251,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [75. ScrollView. DDPageControl+UIScrollView. (Image gallery, Tutorial) ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scrollview.md)
 
+**[76. Отложенный Handler (completionBlock). vkAuthorizeHandler.]**
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
