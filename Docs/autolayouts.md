@@ -1,7 +1,7 @@
 20. NSAutoLayout. PureLayout.
 ==
 
-## Setup Autolayouts
+## Setup Autolayouts.
 
 NSLayoutConstraint-ы позволяют верстать для любых экранов устройств.
 
@@ -37,6 +37,8 @@ NSLayoutConstraint-ы позволяют верстать для любых эк
 }
 ```
 
-## 
+## IBOutlets
+
+
 
 
