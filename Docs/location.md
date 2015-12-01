@@ -23,6 +23,11 @@
 	
 ```
 
+## Location permissions
+
+
+## AIRLocationService
+
 
 
 
