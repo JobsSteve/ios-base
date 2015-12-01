@@ -6,6 +6,7 @@
 NSLayoutConstraint-ы позволяют верстать для любых экранов устройств.
 
 ```objc
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *roundMapHeightConstraint;
@@ -35,13 +36,15 @@ NSLayoutConstraint-ы позволяют верстать для любых эк
         self.roundMapTopConstraint.constant = 87;
     }
 }
+
 ```
 
 ## IBOutlets
 
+* Вот таким образом добавляется IBOutlets для ширины.
+![Вот таким образом добавляется IBOutlets для ширины](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/add_layoutconstraint.png)
 
-[Вот таким образом добавляется IBOutlets для ширины](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/add_layoutconstraint.png)
-
+* Обзор всего экрана Autolayout Constraints.
 ![Обзор всего экрана Autolayout Constraints](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/setup_autolayout.png)
 
 
