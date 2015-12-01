@@ -1,4 +1,4 @@
-63. Location
+63. Location. Permission. Get location on map.
 ==
 
 
