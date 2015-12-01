@@ -81,11 +81,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 
 
-
-
 **[8. Debug Logging. DLog. Логгирование в файл](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/debug_logging.md)**
-
-
 
 
 
@@ -143,7 +139,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[19. NSDate.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/date.md)**
 
-[20. NSAutoLayoutContraints. PureLayout.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/autolayouts.md)
+**[20. NSAutoLayoutContraints. PureLayout.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/autolayouts.md)**
 
 [21. Logging. DLog. Lumberjack.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/logging.md)
 
