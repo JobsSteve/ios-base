@@ -229,7 +229,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[64. AppDelegate - Enter point to app. Точка входа в приложение. Выход из Фона/Бэкграунда режима. Логика при входе в приложение. приложения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/enter_point.md)**
 
-[65. KVO. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
+[65. KVO. KVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
 
 **[66. Get device version. Device metadata](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/bug_report.md)**
 
