@@ -44,7 +44,7 @@ NSLayoutConstraint-ы позволяют верстать для любых эк
 * Вот таким образом добавляется IBOutlets для ширины.
 ![Вот таким образом добавляется IBOutlets для ширины](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/add_layoutconstraint.png)
 
-* Обзор всего экрана Autolayout Constraints.
+* Обзор всего экрана при работе с Autolayout Constraints.
 ![Обзор всего экрана Autolayout Constraints](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/setup_autolayout.png)
 
 
