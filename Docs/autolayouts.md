@@ -39,6 +39,9 @@ NSLayoutConstraint-ы позволяют верстать для любых эк
 
 ## IBOutlets
 
+![IBOutlets](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/add_layoutconstraint.png)
+
+![Autolayout Constraints](https://github.com/arthurigberdin/ios-base/blob/master/Images/Autolayouts/setup_autolayout.png)
 
 
 
