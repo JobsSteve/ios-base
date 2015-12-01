@@ -38,6 +38,18 @@ __.m__
         self.vkAuthorizeHandler(newToken.accessToken);
     }
 }
+
+/**
+ Notifies delegate about user authorization cancelation
+ @param authorizationError error that describes authorization error
+ */
+- (void)vkSdkUserDeniedAccess:(VKError *)authorizationError {
+    
+    if (self.vkAuthorizeHandler) {
+        self.vkAuthorizeHandler(nil);
+    }
+    
+}
 ```
 
 
