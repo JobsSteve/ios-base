@@ -171,6 +171,10 @@ NSMutableData *data = [NSMutableData data];
  
 * 1. можно вытаскивать как __Extracting (2)__ файла - `certificate + (private key)`. 
 * 2. так и как __Extracting (1)__ файл - только закрытый ключ `(private key)`. 
+* 
+## Обработка всех видов пушей. Допустим приходит пуш, когда приложение в подвешенном состоянии.
+
+## Push Service. [AIRPushService sharedService].
 
 ## Вопросы:
 
