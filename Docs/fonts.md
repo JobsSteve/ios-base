@@ -1,3 +1,28 @@
+Fonts.
+==
+
+
+## Add Custom Fonts to project
+
+1. Add Fonts to Project (Кинуть шрифты в проект). и уже можно смотреть на симуляторе.
+
+2. Добавить в Info.plist
+
+`Fonts provided by Application` > `font-name.otf` и т.д.
+
+3. Check system names of the fonts 
+
+```objc
+for (NSString* family in [UIFont familyNames])
+{
+    NSLog(@"%@", family);
+    for (NSString* name in [UIFont fontNamesForFamilyName: family])
+    {
+        NSLog(@"  %@", name);
+    }
+}
+```
+
 Fonts-Tests
 ==
 
