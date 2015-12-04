@@ -1,4 +1,4 @@
-Custom Fonts.
+!Custom Fonts.
 ==
 
 ## Add Custom Fonts to project
@@ -24,7 +24,6 @@ for (NSString* family in [UIFont familyNames]) {
 __!!!Существует метаморфоза связанная с тем, что кастомные шрифты могут пропадать в проекте.__
 
 Добавить библиотеки в проект:
-
 `CoreText.framework`
 `MobileCoreServices.framework`
 
