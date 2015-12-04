@@ -35,7 +35,9 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 ```
 
 
+### Вопросы:
 
+* 1.Changing language on the fly, in running iOS, iphone app?
 
 
 
