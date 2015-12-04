@@ -23,7 +23,7 @@ for (NSString* family in [UIFont familyNames])
 
 ## Load Custom Fonts (Загружае шрифты в проект программно)
 
-Существует метаморфоза связанная с тем, что кастомные шрифты могут пропадать в проекте.
+__!!Существует метаморфоза связанная с тем, что кастомные шрифты могут пропадать в проекте.__
 
 Добавить библиотеки в проект:
 
@@ -72,25 +72,6 @@ for (NSString* family in [UIFont familyNames])
 
 
 
-Fonts-Tests
-==
-
-1. Добавить папку с Fonts в `project navigator`.
-
-2. `Info.plist` -> Fonts provided in application (добавить item-ы)
-
-3. Target -> `Copy Bundles Resource`s (добавить файлы)
-
-4. Метод для `определения названия шрифтов` (чтобы использовать в коде):
-
-```objc
-for (NSString* family in [UIFont familyNames]) {
-    NSLog(@"%@", family);
-    for (NSString* name in [UIFont fontNamesForFamilyName: family]) {
-        NSLog(@"  %@", name);
-    }
-}
-```
 
 
 5. Альтернатива, добавление через `CoreText`
