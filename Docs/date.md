@@ -1,6 +1,5 @@
-19. NSDate.
+19. NSDate. NSDateFormatter. NSLocale.
 ==
-
 
 ### [NSDate date] - Что возвращает?
 
@@ -34,6 +33,26 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 });
 ```
 
+## Меняем локаль у форматтера (NSLocale) в зависимости от языка.
+
+```objc
+NSString *lang = [[JHUserDefaultHelper sharedInstance] getAppLanguage];
+    
+    if (self.locale == nil) {
+        if ([lang isEqualToString:@"ru"]) {
+            self.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"ru_RU"];
+        } else {
+            self.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_EN"];
+        }
+    }
+    //Устанавливает локаль в форматтер
+    formatter.locale = self.locale;
+  
+    [formatter setDoesRelativeDateFormatting:YES];
+    NSString *headerText = [formatter stringFromDate:firstInSection.creationDateUTC];
+    
+    header.label.text = headerText;
+```
 
 ### Вопросы:
 
