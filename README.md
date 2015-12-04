@@ -211,15 +211,15 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [55. Convertations. Literals.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/convertations.md)
 
-**[56. !Custom Fonts ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/fonts.md)**
+**[56. Custom Fonts.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/fonts.md)**
 
-**[57. Localization](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/localyzation.md)**
+**[57. Localization.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/localyzation.md)**
 
-[58. Adaptation to iOS9](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ios9.md)
+[58. Adaptation to iOS9.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ios9.md)
 
-[59. Preprocessor (Препроцессор) ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/preprocessor.md)
+[59. Preprocessor (Препроцессор).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/preprocessor.md)
 
-**[60. User-Defined](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/user-defined.md)**
+**[60. User-Defined.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/user-defined.md)**
 
 **[61. Скрипты. Scripts. Скрипт для инкрементирования билда.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/scripts.md)**
 
@@ -231,7 +231,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [65. KVO. KVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/kvo.md)
 
-**[66. Get device version. Device metadata](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/bug_report.md)**
+**[66. Get device version. Device metadata.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/bug_report.md)**
 
 [67. ActionSheet. UIViewController+Share.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/actionsheet.md)
 
