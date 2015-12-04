@@ -23,7 +23,7 @@ for (NSString* family in [UIFont familyNames])
 
 ## Load Custom Fonts (Загружае шрифты в проект программно)
 
-__!!Существует метаморфоза связанная с тем, что кастомные шрифты могут пропадать в проекте.__
+__!!!Существует метаморфоза связанная с тем, что кастомные шрифты могут пропадать в проекте.__
 
 Добавить библиотеки в проект:
 
@@ -71,28 +71,4 @@ __!!Существует метаморфоза связанная с тем, ч
 ```
 
 
-
-
-
-5. Альтернатива, добавление через `CoreText`
-
-```objc
-
-// Load custom fonts
-CTFontManagerRegisterFontsForURLs((__bridge CFArrayRef)((^{
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *resourceURL = [[NSBundle mainBundle] resourceURL];
-    NSArray *resourceURLs = [fileManager contentsOfDirectoryAtURL:resourceURL includingPropertiesForKeys:nil options:0 error:nil];
-    return [resourceURLs filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NSURL *url, NSDictionary *bindings) {
-        CFStringRef pathExtension = (__bridge CFStringRef)[url pathExtension];
-        NSArray *allIdentifiers = (__bridge_transfer NSArray *)UTTypeCreateAllIdentifiersForTag(kUTTagClassFilenameExtension, pathExtension, CFSTR("public.font"));
-        if (![allIdentifiers count]) {
-            return NO;
-        }
-        CFStringRef utType = (__bridge CFStringRef)[allIdentifiers lastObject];
-        return (!CFStringHasPrefix(utType, CFSTR("dyn.")) && UTTypeConformsTo(utType, CFSTR("public.font")));
-
-    }]];
-})()), kCTFontManagerScopeProcess, nil);
-```
 
