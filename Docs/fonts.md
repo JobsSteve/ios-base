@@ -1,4 +1,4 @@
-Fonts.
+Custom Fonts.
 ==
 
 ## Add Custom Fonts to project
