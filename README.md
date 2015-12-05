@@ -239,7 +239,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [69. Router.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/router.md)
 
-[70. Проблема с UIAlertView.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alert_view.md)
+**[70. Проблема с UIAlertView (deprecation). UIAlertController. UIAlertController+Blocks. RMUniversalController.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alert_view.md)**
 
 **[71. Мобильная статистика. Mixpanel. Appsflyer](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/mobile_statistics.md)**
 
