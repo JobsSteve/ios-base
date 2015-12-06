@@ -255,6 +255,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [77. NSNotificationCenter.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/notificationcenter.md)
 
+[78. Alcatraz. Xcode Plugins. Effective work.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alcatraz.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
