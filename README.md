@@ -257,6 +257,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [78. Alcatraz. Xcode Plugins. Effective work.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alcatraz.md)
 
+[79. Custom IBDESIGNABLE UIView with XIB file. Компонент, который настраивается из IB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/designable_view.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
