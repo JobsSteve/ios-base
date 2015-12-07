@@ -259,6 +259,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [79. Custom IBDESIGNABLE UIView with XIB file. Компонент, который настраивается из IB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/designable_view.md)
 
+[80. UITableViewController. Контроллеры на основе UITableViewController. Настройки. Экраны редактирования чего-либо. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uitableviewcontroller.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
