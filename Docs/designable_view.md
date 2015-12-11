@@ -70,3 +70,32 @@ IB_DESIGNABLE
 @end
 ```
 
+### Контроллер
+
+В контроллере можно настраивать верстку
+
+```objc
+#import "ViewController.h"
+
+@interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *draggableViewHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *draggableViewWidthConstraint;
+@end
+
+@implementation ViewController
+#pragma mark - View lifecycle
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.draggableViewHeightConstraint.constant
+    = 200;
+    self.draggableViewWidthConstraint.constant = 200;
+}
+@end
+```
+
