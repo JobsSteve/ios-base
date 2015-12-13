@@ -261,6 +261,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [80. UITableViewController. Контроллеры на основе UITableViewController. Настройки. Экраны редактирования чего-либо. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uitableviewcontroller.md)
 
+**[81. UIGestures. Tap Gesture. Gestures with IB](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/gestures.md)**
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
