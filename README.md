@@ -257,7 +257,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [78. Alcatraz. Xcode Plugins. Effective work.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alcatraz.md)
 
-[79. Custom IBDESIGNABLE UIView with XIB file. Компонент, который настраивается из IB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/designable_view.md)
+**[79. Custom View. Designable View with XIB. Вьюха настраиваемая через IB.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/designable_view.md)**
 
 [80. UITableViewController. Контроллеры на основе UITableViewController. Настройки. Экраны редактирования чего-либо. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/uitableviewcontroller.md)
 
