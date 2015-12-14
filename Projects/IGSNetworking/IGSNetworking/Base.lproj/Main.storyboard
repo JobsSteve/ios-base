@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hga-9P-Ruy">
+                                <rect key="frame" x="198" y="101" width="204" height="47"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5058724832" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="DcW-92-eFH"/>
+                                    <constraint firstAttribute="height" constant="47" id="yS3-IA-c3w"/>
+                                </constraints>
+                                <state key="normal" title="Создать событие">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createEventTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L5a-1o-CF8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDH-5j-OdH">
+                                <rect key="frame" x="198" y="175" width="204" height="47"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5058724832" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="G8V-1Y-hg4"/>
+                                    <constraint firstAttribute="width" constant="204" id="oKW-CY-kfM"/>
+                                </constraints>
+                                <state key="normal" title="Список событий">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventListTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbK-Xi-9Id"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hga-9P-Ruy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="By6-tm-AEb"/>
+                            <constraint firstItem="iDH-5j-OdH" firstAttribute="top" secondItem="hga-9P-Ruy" secondAttribute="bottom" constant="27" id="I1i-Fb-86U"/>
+                            <constraint firstItem="hga-9P-Ruy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uxr-eK-HQq"/>
+                            <constraint firstItem="iDH-5j-OdH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vxN-nD-mt4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="337"/>
+        </scene>
+    </scenes>
+</document>
