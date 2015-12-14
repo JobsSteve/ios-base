@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enm-XT-bnA">
+                                <rect key="frame" x="180" y="39" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99455026089999998" green="1" blue="0.68653048380000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Jn1-B7-GzP"/>
+                                    <constraint firstAttribute="height" constant="128" id="xi5-pH-Pbe"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WSf-M4-GVX" appends="YES" id="fYL-of-NRk"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvX-7i-QAx">
+                                <rect key="frame" x="208" y="193" width="184" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="9Xt-xi-cjz"/>
+                                    <constraint firstAttribute="height" constant="40" id="xmL-iz-gcP"/>
+                                </constraints>
+                                <state key="normal" title="Просто кнопка">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cgk-uN-MG8" appends="YES" id="gXe-jv-1MM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEV-uP-cJd">
+                                <rect key="frame" x="241" y="261" width="118" height="21"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="ca2-Va-LZo"/>
+                                    <constraint firstAttribute="height" constant="21" id="hGb-Pv-kDJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="x3E-A0-NFJ" appends="YES" id="uOp-7x-UT8"/>
+                                </connections>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="troll" translatesAutoresizingMaskIntoConstraints="NO" id="3au-bP-zNU">
+                                <rect key="frame" x="180" y="305" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GhT-l0-bFO"/>
+                                    <constraint firstAttribute="height" constant="128" id="jne-dE-BQx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="kEV-uP-cJd" firstAttribute="top" secondItem="vvX-7i-QAx" secondAttribute="bottom" constant="28" id="3if-29-0us"/>
+                            <constraint firstItem="Enm-XT-bnA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="7Rf-hZ-das"/>
+                            <constraint firstItem="3au-bP-zNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gho-hG-QfH"/>
+                            <constraint firstItem="3au-bP-zNU" firstAttribute="top" secondItem="kEV-uP-cJd" secondAttribute="bottom" constant="23" id="L7W-gJ-Mnl"/>
+                            <constraint firstItem="kEV-uP-cJd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZy-Da-bda"/>
+                            <constraint firstItem="Enm-XT-bnA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nx7-nC-7kF"/>
+                            <constraint firstItem="vvX-7i-QAx" firstAttribute="top" secondItem="Enm-XT-bnA" secondAttribute="bottom" constant="26" id="eCr-xM-IDk"/>
+                            <constraint firstItem="vvX-7i-QAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="koI-f9-FNN"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Eme-aX-EMS" appends="YES" id="wlu-TE-MUI"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WSf-M4-GVX">
+                    <connections>
+                        <action selector="yellowViewTapGesture:" destination="BYZ-38-t0r" id="63B-oE-gg7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cgk-uN-MG8">
+                    <connections>
+                        <action selector="simpleButtonGesture:" destination="BYZ-38-t0r" id="hCX-dl-p8L"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="x3E-A0-NFJ">
+                    <connections>
+                        <action selector="simpleLabelTapGesture:" destination="BYZ-38-t0r" id="boo-Kz-uAq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Eme-aX-EMS">
+                    <connections>
+                        <action selector="trollFaceImageViewTapGesture:" destination="BYZ-38-t0r" id="VuU-RO-ZZH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="280" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="troll" width="320" height="210"/>
+    </resources>
+</document>
