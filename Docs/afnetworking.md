@@ -18,6 +18,10 @@ C iOS9 появилось нововедение, связанное с тем �
 </dict>
 ```
 
+__Как это будет выглядеть в Info.plist__
+
+![ATS](https://github.com/arthurigberdin/ios-base/blob/master/Images/Adoptation/ats_info.png)
+
 http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/
 
 ## AFNetworkActivityLogger.
