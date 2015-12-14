@@ -22,6 +22,8 @@ http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/
 
 ## AFNetworkActivityLogger.
 
+https://github.com/AFNetworking/AFNetworkActivityLogger
+
 ### Podfile
 
 ```objc
@@ -36,7 +38,12 @@ pod 'AFNetworkActivityLogger', '~> 2.0.4'
 //Network Logger
 #import "AFNetworkActivityLogger.h"
 
+//Cтандартное включение логера
 [[AFNetworkActivityLogger sharedLogger] startLogging];
+
+//Только для вывода логов об ошибках
+//If the default logging level is too verbose—say, if you only want to know when requests fail, then changing it is as simple as:
+[[AFHTTPRequestOperationLogger sharedLogger] setLevel:AFLoggerLevelError];
 ```
 
 ### Network Logging
@@ -46,7 +53,6 @@ NSLog(@"HEADERS = %@", self.manager.requestSerializer.HTTPRequestHeaders);
 NSLog(@"PARAMS  = %@", params);
 NSLog(@"RESPONSE: %@", jsonDict.debugDescription);
 ```
-
 
 ## Обертки для GET/POST запросов, Updload Data. (Request wrappers).
 
@@ -59,5 +65,4 @@ NSLog(@"RESPONSE: %@", jsonDict.debugDescription);
 ## Асинхронные запросы.
 
 ## Повторяющиеся запросы. Отложенные запросы.
-
 
