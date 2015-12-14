@@ -263,6 +263,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[81. UIGestures. Tap Gesture. Gestures with IB](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/gestures.md)**
 
+**[82. Networking. AFNetworking. AFNetworkActivityLogger](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/afnetworking.md)**
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
