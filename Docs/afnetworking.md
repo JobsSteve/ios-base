@@ -1,5 +1,24 @@
-82. Networking. AFNetworking. AFNetworkActivityLogger.
+82. Networking. AFNetworking. AFNetworkActivityLogger. App Transport Security.
 ==
+
+## App Transport Security
+
+C iOS9 появилось нововедение, связанное с тем что проект нужно настроить для работы с networking.
+
+Внутри Info.plist добавляем поле `App Transport Security` > добавляем внуреннее поле `Allows Arbitrary Loads` > `YES`
+
+Данная настройка отключает ограничения на работу с networking.
+
+```objc
+<key>NSAppTransportSecurity</key>
+<dict>
+  <!--Include to allow all connections (DANGER)-->
+  <key>NSAllowsArbitraryLoads</key>
+      <true/>
+</dict>
+```
+
+http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/
 
 ## AFNetworkActivityLogger.
 
@@ -40,4 +59,5 @@ NSLog(@"RESPONSE: %@", jsonDict.debugDescription);
 ## Асинхронные запросы.
 
 ## Повторяющиеся запросы. Отложенные запросы.
+
 
