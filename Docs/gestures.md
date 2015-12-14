@@ -12,3 +12,5 @@
 __Вот так выглядит обзор работы с Tap Gesture через IB__
 
 ![Tap Gestures](https://github.com/arthurigberdin/ios-base/blob/master/Images/Gestures/tap_gestures.png)
+
+[Исходник проекта](https://github.com/arthurigberdin/ios-base/tree/master/Projects/IGSGestures)
