@@ -3,7 +3,7 @@
 
 ## Upload Image
 
-AFNetworking 2.0
+AFNetworking 2.0 + AFHTTPRequestOperationManager + AFHTTPRequestSerializer +
 
 ```objc
 - (void)uploadPhoto:(UIImage *)photo {
@@ -176,6 +176,8 @@ __Response__
     return operation;
 }
 ```
+
+## Обертка запроса для отправки данных (картинка и тп.) на сервер.
 
 ## GUID. UUID.
 
