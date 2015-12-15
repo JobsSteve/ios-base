@@ -265,7 +265,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[82. Networking. AFNetworking. AFNetworkActivityLogger. App Transport Security.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/afnetworking.md)**
 
-**[83.Upload Image. GUID (UUID).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/upload_image.md)**
+**[83. Upload Image. GUID (UUID).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/upload_image.md)**
 
 ### Fundamental Guides (Фундаментальные основы)
 
