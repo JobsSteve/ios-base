@@ -3,9 +3,9 @@
 
 ## Upload Image
 
-AFNetworking 2.0, 
+AFNetworking 2.0
 
-```
+```objc
 - (void)uploadPhoto:(UIImage *)photo {
 
 AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://ppdev.igstest.ru"]];
@@ -44,15 +44,16 @@ NSLog(@"Error: %@ ***** %@", operation.responseString, error);
 
 NSLog(@"BODY = %@", [op responseString]);
 
-
 [op start];
 
 }
 ```
 
-Как узнать что отправляется на сервер при загрузке файла:
+__Как узнать что отправляется на сервер при загрузке файла?__
 
-### Charles
+Можно использовать `Charles Web Debugging Proxy`
+
+### Структура запроса.
 
 __Headers__
 
@@ -96,6 +97,84 @@ __Response__
 
 ```
 {"success":true,"result":"a0d5b66e-eee4-4b15-8b71-803ecd12be08"}
+```
+
+### Альтернативный вариант точно такого же запроса.
+```
+- (AFHTTPRequestOperation *)requestUploadImage:(UIImage *)image andBlock:(void (^)(NSDictionary *responseDict))successBlock
+{
+    //NSLog(@"HEADERS = %@", self.manager.requestSerializer.HTTPRequestHeaders);
+    
+    NSString *kBaseURLString = @"http://ppdev.igstest.ru";
+    NSString *kUploadImage = @"/api/File/Upload";
+    
+    NSData *imageData = UIImagePNGRepresentation(image);
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[kBaseURLString stringByAppendingString:kUploadImage]]];
+    
+    NSString *authorizationToken = [PPAuthorizationManager sharedInstance].accessToken.AccessToken;
+    
+    
+    if ([authorizationToken length] > 5) {
+        [request setValue:[NSString stringWithFormat:@"%@ %@", @"bearer", authorizationToken]
+         forHTTPHeaderField:@"Authorization"];
+    }
+    else {
+        [request setValue:@"bearer" forHTTPHeaderField:@"Authorization"];
+    }
+    
+    request.HTTPMethod = @"POST";
+    
+    NSString *boundary = @"----WebKitFormBoundarycC4YiaUFwM44F6rT";
+    
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
+    
+    [request addValue:contentType forHTTPHeaderField:@"Content-Type"];
+    
+    NSMutableData *body = [NSMutableData data];
+    
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[@"Content-Disposition: form-data; name=\"attachment[file]\";filename=\"picture.png\"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[@"Content-Type: image/png\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [body appendData:[NSData dataWithData:imageData]];
+    
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:body];
+    
+    NSString *strData = [[NSString alloc]initWithData:body encoding:NSUTF8StringEncoding];
+    NSLog(@"BODY = %@",strData);
+    
+    NSLog(@"REQUEST HEADERS = %@", request.allHTTPHeaderFields.debugDescription);
+    NSLog(@"REQUEST HEADERS = %@", request.allHTTPHeaderFields);
+    
+    AFHTTPRequestOperation *operation =
+    [self.manager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
+        
+        NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                 options:NSJSONReadingAllowFragments
+                                                                   error:nil];
+                                                                                  
+        if (successBlock) {
+            successBlock(jsonDict);
+        }
+        else {
+            if (successBlock) {
+                  successBlock(nil);
+            }
+        }
+      }
+      failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+          NSLog(@"%@ Error: %@", [operation.request.URL lastPathComponent], error);
+          if (successBlock) {
+              successBlock(nil);
+          }
+    }];
+    
+    [self.manager.operationQueue addOperation:operation];
+    return operation;
+}
 ```
 
 ## GUID. UUID.
