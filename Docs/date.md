@@ -72,6 +72,27 @@ NSString *lang = [[JHUserDefaultHelper sharedInstance] getAppLanguage];
 }
 ```
 
+## Relative Date Formatter. "Завтра, 1:53 или Послезавтра, 1:53".
+
+```objc
+- (NSString *)relativeDate:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.timeStyle = kCFDateFormatterShortStyle;
+    dateFormatter.dateStyle = kCFDateFormatterLongStyle;
+    NSLocale *ruLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"ru_RU"];
+    dateFormatter.locale = ruLocale;
+    
+    dateFormatter.doesRelativeDateFormatting = YES;
+  
+    //NSDate *date = [NSDate dateWithTimeIntervalSinceNow:60*60*24*3];
+    NSString *dateString = [dateFormatter stringFromDate:date];
+    NSLog(@"dateString: %@", dateString);
+    
+    return dateString;
+}
+```
+
 ## Вопросы:
 
 * 1.Changing language on the fly, in running iOS, iphone app?
