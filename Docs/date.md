@@ -1,14 +1,14 @@
 19. NSDate. NSDateFormatter. NSLocale.
 ==
 
-### [NSDate date] - Что возвращает?
+## [NSDate date] - Что возвращает?
 
-Возвращает текущую дату в UTC.
+Возвращает текущую дату не в UTC. (UTC таймзону нужно устанавливать отдельно в форматтер и прогонять эту дату через форматтер с павильной таймзоной).
 
 `UTC` (Universal Coordinated Time) - всемирное координированное время.
 
 
-### Отобразить интервал времени - через дни/часы/минуты/секунды
+## Интервалы времени - дни/часы/минуты/секунды
 
 ```objc
 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -54,9 +54,28 @@ NSString *lang = [[JHUserDefaultHelper sharedInstance] getAppLanguage];
     header.label.text = headerText;
 ```
 
-### Вопросы:
+## UTC Форматтер для такого значения @"2016-12-09T11:08:44.820Z"
+
+```objc
+- (NSString *)getUTCFormateDate:(NSDate *)localDate
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    [dateFormatter setTimeZone:timeZone];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:sss'Z'"];
+    NSString *dateString = [dateFormatter stringFromDate:localDate];
+    //[dateFormatter release];
+    
+    return dateString;
+}
+```
+
+## Вопросы:
 
 * 1.Changing language on the fly, in running iOS, iphone app?
+
 
 
 
