@@ -1,4 +1,4 @@
-19. NSDate. NSDateFormatter. NSLocale.
+19. NSDate. NSDateFormatter. NSLocale. UTC Date. Relative Date.
 ==
 
 ## [NSDate date] - Что возвращает?
@@ -97,6 +97,6 @@ NSString *lang = [[JHUserDefaultHelper sharedInstance] getAppLanguage];
 
 * 1.Changing language on the fly, in running iOS, iphone app?
 
-
+[Исходник проекта]()
 
 
