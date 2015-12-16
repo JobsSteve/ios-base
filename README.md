@@ -269,6 +269,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[84. GitHub. Git commands. Git Flow. gitignore. Git Autocomplete](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git.md)**
 
+**[85. Designable UI Elements: View, Button, ImageView etc](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/designable_uielements.md)**
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
