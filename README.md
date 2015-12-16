@@ -267,7 +267,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[83. Upload Image. GUID (UUID).](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/upload_image.md)**
 
-[84. GitHub. Git.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git.md)**
+**[84. GitHub. Git commands. Git Flow. gitignore. Git Autocomplete](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git.md)**
 
 ### Fundamental Guides (Фундаментальные основы)
 
