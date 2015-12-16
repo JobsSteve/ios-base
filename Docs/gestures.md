@@ -14,3 +14,20 @@ __Вот так выглядит обзор работы с Tap Gesture чере
 ![Tap Gestures](https://github.com/arthurigberdin/ios-base/blob/master/Images/Gestures/tap_gestures.png)
 
 [Исходник проекта](https://github.com/arthurigberdin/ios-base/tree/master/Projects/IGSGestures)
+
+## Long Press Gesture Recognizer. Устраняем повторное нажатие.
+
+```objc
+UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+[self.button addGestureRecognizer:longPress];
+[longPress release];
+```
+
+```objc
+- (void)longPress:(UILongPressGestureRecognizer*)gesture {
+
+    if ( gesture.state == UIGestureRecognizerStateBegan ) {
+         NSLog(@"Long Press");
+    }
+}
+````
