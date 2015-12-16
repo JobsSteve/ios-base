@@ -35,7 +35,7 @@ git checkout --track -b origin/daves_branch
 
 ### Revert commit.
 
-можно отцепить последний коммит и перезаписать его новым, есть специальная последовательность команд
+Можно отцепить последний коммит и перезаписать его новым, есть специальная последовательность команд
 
 ```
 git reset --hard HEAD^
@@ -57,8 +57,5 @@ git revert HEAD
 git commit --amend -m "New commit message"
 ```
 
-
 ### Rebase.
-
-1
 
