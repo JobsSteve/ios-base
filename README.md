@@ -271,6 +271,10 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[85. Designable UI Elements: View, Button, ImageView etc](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/designable_uielements.md)**
 
+[86. Статичный класс. Formatter. Validator. Pluralizator.]()
+
+[87. Интересные iOS головолоки. Суем ссылку на объект 10 раз в массив. зацикливание инстант переменных в init-методах и set/get-ах.]()
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
