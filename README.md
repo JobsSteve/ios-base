@@ -275,6 +275,10 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [87. Интересные iOS головолоки. Суем ссылку на объект 10 раз в массив. зацикливание инстант переменных в init-методах и set/get-ах.]()
 
+[88. Оценка проекта.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/evaluation.md)
+
+[89. Formatter. Статический класс форматтер - склонения, даты, логические выражения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/formatter.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
