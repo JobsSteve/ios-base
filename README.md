@@ -8,25 +8,9 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 ## Objective-C Development Guides
 
-### Base (Базовые гайды)
-
-**1. Git.**
-
-**gitignore. git commands. tracking. rebase. git flow. source tree.**
-
-* **[1.1 gitignore. (Проект начинается с добавления gitignore файла)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/ignoring_files.md)**
-    
-* **[1.2 Git. Команды.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
-    
-* **[1.3 Git Flow. Командная разработка.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_flow.md)**
-
-* [1.4 Source Tree. Source Tree vs Terminal.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/source_tree.md)
-    
-
-**2. Структура проекта.**
-
-* **[2.1 Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях.)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
-* [2.2 Альтернативная структура проекта.]()
+**[1.Git. gitignore. git commands. tracking. rebase. git flow и командная разработка. source tree. terminal autocomplete.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
+   
+* **[2. Структура проекта. Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях. Альтернативная структура проекта построенная на основе userstory.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
 
 
 **3. Оформление кода**
@@ -37,11 +21,13 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 * **[3.3 Readme.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/readme_rules.md)**
 
+
 **4. Сборка. Сторонние библиотеки**
 
 * **[4.1 CocoaPods. (Управление сторонними библиотеками)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cocoapods.md)**
 
 * **[4.2. Podfile. (Рекомендуемые сторонние библиотеки)](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/podfile_libs.md)**
+
 
 **5. Стандарты кодирования**
 
