@@ -265,6 +265,8 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [89. Formatter. Статический класс форматтер - склонения, даты, логические выражения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/formatter.md)
 
+**[90. Быстрые клавиши для эффективной работы.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/hotkeys.md)**
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
