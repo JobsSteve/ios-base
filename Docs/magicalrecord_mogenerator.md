@@ -8,37 +8,41 @@ http://raptureinvenice.com/getting-started-with-mogenerator/
 ## MagicalRecord установка:
 
 1. Добавляем MagicalRecord в Подфайл:
-```
-vim Podfile
 
-platform :ios, 
-pod 'MagicalRecord'
-```
-2. Линкуем CoreData Framework в проект `Project navigator > Targets > Build Phases > Link Binary With Libraries > + > CoreData.framework`
+    ```
+    vim Podfile
+
+    platform :ios, 
+    pod 'MagicalRecord'
+    ```
+    
+2. Линкуем CoreData Framework в проект 
+    `Project navigator > Targets > Build Phases > Link Binary With Libraries > + > CoreData.framework`
 3. Импортируем в pch (pre-compiled header)
-```objc
-#import "CoreData+MagicaRecord.h"
-```
+    ```objc
+    #import "CoreData+MagicaRecord.h"
+    ```
 4. В Aппделегате при запуске (application:didFinishLaunchingWithOptions:)
-```objc
-[MagicalRecord setupAutoMigrationCoreDataStack];
-```
-```objc
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //MAGICAL RECORD
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.xcdatamodeld"];
+    ```objc
+    [MagicalRecord setupAutoMigrationCoreDataStack];
+    ```
+    ```objc
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        //MAGICAL RECORD
+        [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.xcdatamodeld"];
 
-    return YES;
-}
-- (void)applicationWillTerminate:(UIApplication *)application {
-    [MagicalRecord cleanUp];
-}
-```
+        return YES;
+    }
+    - (void)applicationWillTerminate:(UIApplication *)application {
+        [MagicalRecord cleanUp];
+    }
+    ```
 5. Включаем логгер для MagicalRecord:
 Этот дефайн можно найти в файле MagicalRecord.h
-```objc
-#define MR_ENABLE_ACTIVE_RECORD_LOGGING 1 
-```
+
+    ```objc
+    #define MR_ENABLE_ACTIVE_RECORD_LOGGING 1 
+    ```
 6. Теперь можете кодить!
 
 
