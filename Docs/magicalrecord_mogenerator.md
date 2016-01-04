@@ -1,14 +1,57 @@
 14. Magical Record + MOGenerator.
 ==
+
+__Ссылка на проект__
 http://raptureinvenice.com/getting-started-with-mogenerator/
 
-## Описание.
+
+## MagicalRecord установка:
+
+1. Добавляем MagicalRecord в Подфайл:
+
+```
+vim Podfile
+
+platform :ios, 
+pod 'MagicalRecord'
+```
+
+2. Линкуем CoreData Framework в проект `Project navigator > Targets > Build Phases > Link Binary With Libraries > + > CoreData.framework`
+
+3. Импортируем в pch (pre-compiled header)
+
+```objc
+#import "CoreData+MagicaRecord.h"
+```
+
+4. В Aппделегате при запуске (application:didFinishLaunchingWithOptions:)
+
+```objc
+[MagicalRecord setupAutoMigrationCoreDataStack];
+```
+
+```objc
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //MAGICAL RECORD
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.xcdatamodeld"];
+
+    return YES;
+}
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [MagicalRecord cleanUp];
+}
+```
+
+5. Включаем логгер для MagicalRecord:
+
+
+## Что такое MOGenerator
 
 `MOGenerator` - генерирует `objc` код для кастомных классов-моделей CoreData. 
 Mogenerator генерирует два класса `еntity-cущности` - один для **machines** и второй для **humans**. 
 Машинный класс будет `перезаписываться` при запуске mogen скрипта.
 
-Что делает MOGenerator:
+Премущества MOGenerator:
 
 > 1. Быстрое и легкая генерация конкретных классов для модели.
 2. Представление в виде двух-классов.
@@ -16,15 +59,15 @@ Mogenerator генерирует два класса `еntity-cущности` -
 4. Удобные setter-методы.
 5. Удобные wrapper-методы для вставки и идентификации сущности.
 
-## Установка MOGen cкрипта (mogenerator installer).
+### Установка MOGen cкрипта (mogenerator installer).
 Скачивается mogenerator.dmg и производим установку приложения.
 
 1. [Install MOGen from a DMG](http://rentzsch.github.io/mogenerator/) и Setup project.
 
-## Настройка проекта:
+## Настройка MOGen:
 
 ### Таргет
-Добавляем новый Таргет - `Aggregate` таргет > назовем его `Mogenerator`.
+Добавляем новый Таргет - __Aggregate__ таргет > назовем его `Mogenerator`.
 
 ### Скрипт
 Mogenerator > Build Phase > "+" > `New Run Script Build Phase` > оставляем поле Shell: `/bin/sh`
