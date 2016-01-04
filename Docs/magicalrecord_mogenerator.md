@@ -8,28 +8,21 @@ http://raptureinvenice.com/getting-started-with-mogenerator/
 ## MagicalRecord установка:
 
 1. Добавляем MagicalRecord в Подфайл:
-
 ```
 vim Podfile
 
 platform :ios, 
 pod 'MagicalRecord'
 ```
-
 2. Линкуем CoreData Framework в проект `Project navigator > Targets > Build Phases > Link Binary With Libraries > + > CoreData.framework`
-
 3. Импортируем в pch (pre-compiled header)
-
 ```objc
 #import "CoreData+MagicaRecord.h"
 ```
-
 4. В Aппделегате при запуске (application:didFinishLaunchingWithOptions:)
-
 ```objc
 [MagicalRecord setupAutoMigrationCoreDataStack];
 ```
-
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //MAGICAL RECORD
@@ -41,15 +34,11 @@ pod 'MagicalRecord'
     [MagicalRecord cleanUp];
 }
 ```
-
 5. Включаем логгер для MagicalRecord:
-
 Этот дефайн можно найти в файле MagicalRecord.h
-
 ```objc
 #define MR_ENABLE_ACTIVE_RECORD_LOGGING 1 
 ```
-
 6. Теперь можете кодить!
 
 
@@ -64,7 +53,9 @@ pod 'MagicalRecord'
 `Mogenerator > Build Phase > + > New Run Script Build Phase > оставляем поле Shell: /bin/sh`
 
 ObjC:
-`mogenerator -m parking-ios/Models/Model.xcdatamodeld/Model.xcdatamodel -O parking-ios/Models/Model --template-var arc=true`
+```
+mogenerator -m parking-ios/Models/Model.xcdatamodeld/Model.xcdatamodel -O parking-ios/Models/Model --template-var arc=true
+```
 
 4. Настройте сущностей
 
@@ -73,6 +64,7 @@ ObjC:
 Когда модели созданы нужно настроить сущности модели `Populate class field Class > MMUser`. (Equal Name and Class)
 
 ![Equal Name and Class](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/Entity.png)
+
 
 5. Ручной запуск скрипта
 
