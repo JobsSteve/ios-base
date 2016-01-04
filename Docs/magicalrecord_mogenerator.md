@@ -44,6 +44,42 @@ pod 'MagicalRecord'
 
 5. Включаем логгер для MagicalRecord:
 
+Этот дефайн можно найти в файле MagicalRecord.h
+
+```objc
+#define MR_ENABLE_ACTIVE_RECORD_LOGGING 1 
+```
+
+6. Теперь можете кодить!
+
+
+## MOGenerator установка
+
+1. Скачайте и установите [MOGenerator](http://rentzsch.github.io/mogenerator/)
+
+2. Добавьте __Aggregate__ таргет в проект и назовите его `Mogenerator`
+
+3. Добавьте скрипт
+
+`Mogenerator > Build Phase > + > New Run Script Build Phase > оставляем поле Shell: /bin/sh`
+
+ObjC:
+`mogenerator -m parking-ios/Models/Model.xcdatamodeld/Model.xcdatamodel -O parking-ios/Models/Model --template-var arc=true`
+
+4. Настройте сущностей
+
+`New file > Создаем новый файл Model.xcdatamodeld в директории Models > Создаем модели например: MMUser, MMSettings, MMParkingCapture.`
+
+Когда модели созданы нужно настроить сущности модели `Populate class field Class > MMUser`. (Equal Name and Class)
+
+![Equal Name and Class](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/Entity.png)
+
+5. Ручной запуск скрипта
+
+Запуск скрипта __Mogenerator__ для обновления генерируемых файлов.
+
+Выбираем таргет Mogenerator и запускаем `hit ⌘B`. Запускается скрипт и генерируются файлы. Well done!
+
 
 ## Что такое MOGenerator
 
@@ -59,51 +95,10 @@ Mogenerator генерирует два класса `еntity-cущности` -
 4. Удобные setter-методы.
 5. Удобные wrapper-методы для вставки и идентификации сущности.
 
-### Установка MOGen cкрипта (mogenerator installer).
-Скачивается mogenerator.dmg и производим установку приложения.
 
-1. [Install MOGen from a DMG](http://rentzsch.github.io/mogenerator/) и Setup project.
+### Как работает MOGen и пример использования
 
-## Настройка MOGen:
-
-### Таргет
-Добавляем новый Таргет - __Aggregate__ таргет > назовем его `Mogenerator`.
-
-### Скрипт
-Mogenerator > Build Phase > "+" > `New Run Script Build Phase` > оставляем поле Shell: `/bin/sh`
-
-ObjC:
-`mogenerator -m parking-ios/Models/Model.xcdatamodeld/Model.xcdatamodel -O parking-ios/Models/Model --template-var arc=true`
-
-### Модель и настройка сущностей
-New file > Создаем новый файл `Model.xcdatamodeld` в директории Models > Создаем модели например: MMUser, MMSettings, MMParkingCapture.
-
-Когда модели созданы нужно настроить сущности модели `Populate class field` Class > MMUser.
-
-![Equal Name and Class](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/Entity.png)
-
-Добавляем MOGenerator (должен быть добавлен `CoreData.framework`), либо должна быть добавлена в Podfile проекта.
-
-### Ручной запуск скрипта
-
-Запуск скрипта "Mogenerator" для обновления генерируемых файлов:
-
-Change your build target to "Mogenerator" (or whatever you called it) and `hit ⌘B` to build. And you’re done.
-
-### Как работает и пример использования
-
-You’ll notice that there are two sets of files, _Event.* and Event.*. If you’re not familiar with this pattern, it’s amazing. It’s also been used for years and shame on Apple that they don’t do this out of the box. The _Event.* files are generated and you should never touch them. The Event.* files are generated only if they don’t exist and you can feel free to add any methods and properties you like.
-
-`Better Setters`
-
-```objc
-if (user.isAdmin) {
-    ...
-}
-```
-WRONG! The isAdmin attribute is an NSNumber, so this will evaluate to true for all cases where isAdmin isn’t nil! I ran into this so many times I even contemplated scrapping Core Data to erase the emotional pain.
-
-Not anymore with Mogen. You can now write the code as:
+Теперь при обращении к данным у нас есть врапперы для NSNumber
 
 ```objc
 if (user.isAdminValue) {
@@ -111,20 +106,7 @@ if (user.isAdminValue) {
 }
 ```
 
-## Magical Record
-
-**Setup** Magical Record in project.
-```obj-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //MAGICAL RECORD
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.xcdatamodeld"];
-
-    return YES;
-}
-- (void)applicationWillTerminate:(UIApplication *)application {
-    [MagicalRecord cleanUp];
-}
-```
+### Как работает Magical Record
 
 Magical Record **Update** entity.
 ```objc
