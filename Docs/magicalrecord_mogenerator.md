@@ -53,28 +53,22 @@ http://raptureinvenice.com/getting-started-with-mogenerator/
 2. Добавьте __Aggregate__ таргет в проект и назовите его `Mogenerator`
 
 3. Добавьте скрипт
-
-`Mogenerator > Build Phase > + > New Run Script Build Phase > оставляем поле Shell: /bin/sh`
-
-ObjC:
-```
-mogenerator -m parking-ios/Models/Model.xcdatamodeld/Model.xcdatamodel -O parking-ios/Models/Model --template-var arc=true
-```
+    `Mogenerator > Build Phase > + > New Run Script Build Phase > оставляем поле Shell: /bin/sh`
+    ObjC:
+    ```
+    mogenerator -m parking-ios/Models/Model.xcdatamodeld/Model.xcdatamodel -O parking-ios/Models/Model --template-var arc=true
+    ```
 
 4. Настройте сущностей
+    `New file > Создаем новый файл Model.xcdatamodeld в директории Models > Создаем модели например: MMUser, MMSettings,     MMParkingCapture.`
 
-`New file > Создаем новый файл Model.xcdatamodeld в директории Models > Создаем модели например: MMUser, MMSettings, MMParkingCapture.`
-
-Когда модели созданы нужно настроить сущности модели `Populate class field Class > MMUser`. (Equal Name and Class)
-
-![Equal Name and Class](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/Entity.png)
-
-
+    Когда модели созданы нужно настроить сущности модели `Populate class field Class > MMUser`. (Equal Name and Class)
+   
+    ![Equal Name and Class](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/Entity.png)
 5. Ручной запуск скрипта
 
-Запуск скрипта __Mogenerator__ для обновления генерируемых файлов.
-
-Выбираем таргет Mogenerator и запускаем `hit ⌘B`. Запускается скрипт и генерируются файлы. Well done!
+    Запуск скрипта __Mogenerator__ для обновления генерируемых файлов.
+    Выбираем таргет Mogenerator и запускаем `hit ⌘B`. Запускается скрипт и генерируются файлы. Well done!
 
 
 ## Что такое MOGenerator
