@@ -8,10 +8,15 @@
 2. Добавить иерархию файлов (`Macros, Settings, Segues, Callbacks, NotificationKeys`) для констант.
 
 __IGSMacros.h__ - дефайн макросы (размеры экранов, версии ios и девайсов, макросы на функции-помощники, debug log, rgb).
+
 __IGSDefinitions.h__ - констаны и енумераторы.
+
 __IGSNotificationKeys.h__ - идентификаторы нотификайшнов.
+
 __IGSCallbacks__ - список методов с блоками.
+
 __IGSSegues__ - идентификаторы сегвеев.
+
 __IGSSettings__ - функции-помощники для UserDefaults. константы для userdefaults.
 
 
