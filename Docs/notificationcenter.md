@@ -53,7 +53,7 @@ BOOL isAuthorized = [[PPAuthorizationManager sharedInstance] isAuthorized];
 {
     BOOL isAuthorized = [[PPAuthorizationManager sharedInstance] isAuthorized];
         if (!isAuthorized) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"kAnimateWelcomeTour" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kAnimateWelcomeTour object:nil];
         }
 }
 ```
