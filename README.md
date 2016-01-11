@@ -11,7 +11,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 **[1.Git. gitignore. git commands. tracking. rebase. git flow и командная разработка. source tree. terminal autocomplete.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/git_commands.md)**
    
 * **[2. Структура проекта. Groups structure in Project Navigator and directories. (Структура проекта в Project Navigator-e и директориях. Альтернативная структура проекта построенная на основе userstory.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/groups_projectnavigator.md)**
-
+n
 
 **3. Оформление кода**
 
@@ -239,7 +239,7 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 **[76. Отложенный Handler (completionBlock). vkAuthorizeHandler.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/completion_handler.md)**
 
-[77. NSNotificationCenter.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/notificationcenter.md)
+**[77. NSNotificationCenter.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/notificationcenter.md)**
 
 [78. Alcatraz. Xcode Plugins. Effective work.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/alcatraz.md)
 
@@ -265,7 +265,9 @@ __[Ccылка на Apple Developer Guides](https://developer.apple.com/library/i
 
 [89. Formatter. Статический класс форматтер - склонения, даты, логические выражения.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/formatter.md)
 
-**[90. Быстрые клавиши для эффективной работы.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/hotkeys.md)**
+**[90. Быстрые клавиши для эффективной работы с Xcode, MacOS и тд.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/hotkeys.md)**
+
+**[91. Работа с константами.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/work_with_constants.md)**
 
 ### Fundamental Guides (Фундаментальные основы)
 
