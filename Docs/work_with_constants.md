@@ -135,7 +135,7 @@ static NSString *const kDTVKAppId = @"5047045";
 NSUInteger static const kDTAbuseCount = 3;
 ```
 
-Отделение PRODUCTION от DEBUG
+__Отделение PRODUCTION от DEBUG__
 
 ```objc
 #ifdef PRODUCTION
@@ -145,7 +145,7 @@ NSUInteger static const kDTAbuseCount = 3;
 #endif
 ```
 
-[Production Macros](production_macros)
+![PRODUCTION Macros](https://github.com/arthurigberdin/ios-base/blob/master/Images/production_macros.png)
 
 ## IGSNotificationKeys.h
 
@@ -192,7 +192,7 @@ typedef void (^QBChatRoomResultBlock)(QBChatRoom *chatRoom, NSError *error);
 typedef void (^QBChatDialogHistoryBlock)(NSMutableArray *chatDialogHistoryArray, NSError *error);
 ```
 
-## IGSSettings
+## IGSSettings.h
 
 ```objc
 #pragma mark - Settings
