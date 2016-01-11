@@ -26,9 +26,6 @@
 Внутри макросов сделать разделение на pragma-marks.
 
 ```objc
-#ifndef IGS_Macros_h
-#define IGS_Macros_h
-
 #pragma mark - Device Types
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
@@ -38,19 +35,25 @@
 #define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+```
 
+```objc
 #pragma mark - Screen Sizes 
 
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
 #define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+```
 
+```objc
 #pragma mark - Screen Scale
  
 #define IS_RETINA               ([UIScreen mainScreen].scale >= 2)
 #define IS_EXTRA_RETINA         ([UIScreen mainScreen].scale == 3)
+```
 
+```objc
 #pragma mark - IOS Version
 
 #define SYSTEM_VERSION          ([[[UIDevice currentDevice] systemVersion] floatValue])
@@ -59,11 +62,15 @@
 #define IOS7_OR_HIGHER          (7.0 <= SYSTEM_VERSION)
 #define IOS8_OR_HIGHER          (8.0 <= SYSTEM_VERSION)
 #define IOS9                    (9.0 <= SYSTEM_VERSION && SYSTEM_VERSION < 10.0)
+```
 
+```objc
 #pragma mark - Device Orientation
 
 #define IS_PORTRAIT     UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])
+```
 
+```objc
 #pragma mark - Debug Log
 
 #ifdef DEBUG
@@ -71,17 +78,23 @@
 #else
 #define DLog(...) do { } while (0)
 #endif
+```
 
+```objc
 #define DECL_CONST(_VALUE) FOUNDATION_EXTERN  NSString *const _VALUE;
 #define IMPL_CONST(_VALUE) NSString *const _VALUE = @#_VALUE;
 #define IMPL_CONST_TEXT(_VALUE,_TEXT) NSString *const _VALUE = _TEXT;
+```
 
+```objc
 //RGB
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define RGB(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+```
 
+```objc
 //Block Safe
 //Не стоит это использовать, поскольку если падает приложение - найти ошибку во вложенных блоках проще
 #define BLOCK_SAFE_RUN(block, ...) block ? block(__VA_ARGS__) : nil
