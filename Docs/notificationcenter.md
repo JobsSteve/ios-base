@@ -44,3 +44,20 @@ BOOL isAuthorized = [[PPAuthorizationManager sharedInstance] isAuthorized];
 }
 ```
 
+## Кейс для NSNotificationCenter (Refresh UI)
+
+При выходе из неактивного состояния в активное: Перестает работать анимация элемента на экране.
+
+```objc
+- applicationWillTerminate:(UIApplication *)application
+{
+    BOOL isAuthorized = [[PPAuthorizationManager sharedInstance] isAuthorized];
+        if (!isAuthorized) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"kAnimateWelcomeTour" object:nil];
+        }
+}
+```
+
+
+
+
