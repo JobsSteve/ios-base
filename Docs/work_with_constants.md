@@ -87,9 +87,9 @@ __IGSSettings__ - функции-помощники для UserDefaults. кон�
 #pragma mark - Debug Log
 
 #ifdef DEBUG
-#define DLog(...) do { NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]); } while(0)
+#define DLog(...) NSLog(@"%s(%p) %@", __PRETTY_FUNCTION__, self, [NSString stringWithFormat:__VA_ARGS__])
 #else
-#define DLog(...) do { } while (0)
+#define DLog(...)
 #endif
 ```
 
