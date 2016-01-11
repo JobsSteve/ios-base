@@ -3,31 +3,28 @@
 
 ## Правильная работа с константами
 
-1.
-Добавить .pch файл
+1. Добавить .pch файл
 
-2.
-Добавить иерархию файлов (Macros, Settings, Segues, Callbacks, NotificationKeys) для констант.
-
+2. Добавить иерархию файлов (`Macros, Settings, Segues, Callbacks, NotificationKeys`) для констант.
 
 ### IGS-Prefix.pch
 
 Идея иерархии - IGSDefinitions включает (Constants, NotificationKeys, Callbacks, Settings)
 
-
 ```objc
-    //Constants
-    #import “IGSMacros.h"
+//Constants
+#import “IGSMacros.h"
     
-    #import “IGSDefinitions.h"
-    #import “IGSNotificationKeys.h”
-	  #import “IGSCallbacks.h”
-	  #import “IGSSettings.h”
-    #import “IGSSegues.h”
+#import “IGSDefinitions.h"
+#import “IGSNotificationKeys.h”
+#import “IGSCallbacks.h”
+#import “IGSSettings.h”
+#import “IGSSegues.h”
 ```
 
 ## IGSMarcos.h
 Внутри макросов сделать разделение на pragma-marks.
+
 ```objc
 #ifndef IGS_Macros_h
 #define IGS_Macros_h
@@ -98,6 +95,7 @@ __Константы__
 
 AppID, AppSecret, AppKey, AccountKey, UserPassword, Строковые константы (но для них лучше - Localyzation.strings), Енумераторы, 
 
+```objc
 #pragma mark - Constants
 
 static const NSUInteger kDTApplicationID = 27111;
@@ -111,22 +109,28 @@ typedef NS_ENUM(NSInteger, DTGenderControlTag)
     DTGenderControlTagMy = 1,
     DTGenderControlTagSearch = 2,
 };
+```
 
 __Комментирование__
 
+```objc
+#pragma mark - Constants
 //DTSocialNetworksService
 static NSString *const kDTVKAppId = @"5047045";
 
 //DTBlockedViewController
 NSUInteger static const kDTAbuseCount = 3;
+```
 
 Отделение PRODUCTION от DEBUG
 
+```objc
 #ifdef PRODUCTION
 	static NSString *const  kDTAuthorizationKey = @"Jf8FQXKzH-12345”;
 #else
 	static NSString *const  kDTAuthorizationKey = @"Jf8FQXKzH-98765”;
 #endif
+```
 
 [Production Macros](production_macros)
 
@@ -144,6 +148,7 @@ static NSString *const kVideoRecordActiveNotification = @"VideoRecordActiveNotif
 ```
 
 ## IGSCallbacks.h
+
 ```objc
 typedef void (^IGSContentProgressBlock)(float progress);
 typedef void (^IGSFileUploadTaskResultBlock)(QBCFileUploadTaskResult *result);
@@ -196,11 +201,11 @@ static NSString *const kPrefCustomSearchLocation = @"igs.customsearchlocation";
 #endif
 ```
 
-## IGSSegues
-
-#pragma mark - Segue identifiers
+## IGSSegues.h
 
 ```objc
+#pragma mark - Segue identifiers
+
 static NSString *const kIGSSplashToTourSegue = @"SplashToTourSegue";
 static NSString *const kIGSplashToWelcomeSegue = @"SplashToWelcomeSegue";
 static NSString *const kIGSplashToTabBarSegue = @"SplashToTabBarSegue";
