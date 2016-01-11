@@ -17,11 +17,14 @@ Prefix header file - содержимое файла считывается пр
 6. Clean project: `⌘cmd+⇧shift+K`
 7. Build project: `⌘cmd+B`
 
+Путь для Project-Prefix.pch: `MyProject/Resources/Project-Prefix.pch`
+
 ![Prefix Header](https://github.com/arthurigberdin/rg-ios-base/blob/master/Images/prefix_header.png)
 
 ## Константы и хелперы в Project-Prefix.pch
 
 Helpers in .pch file.
+
 ```objc
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
@@ -32,33 +35,18 @@ Helpers in .pch file.
 #endif
 
 #define BUNDLE_ID [NSBundle mainBundle].bundleIdentifier
-
-#define SCREEN_WIDTH ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
-#define SCREEN_HEIGHT ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
-
-#define IS_IOS_7  ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0f)
-#define IS_IOS_8  ([[[UIDevice currentDevice] systemVersion] floatValue] >=8.0f)
-
-#define IS_IPAD      ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
-#define IS_IPHONE    ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)
-#define IS_LANDSCAPE UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)
-
-#define IS_RETINA ([UIScreen mainScreen].scale==2.0)
-#define ONE_PIXEL (([UIScreen mainScreen].scale==2.0)?0.5f:1.0f)
-
-#define RGB(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 ```
 
 ### Block Safe
 
-```
+```objc
+//Не стоит это использовать, поскольку если падает приложение - найти ошибку во вложенных блоках проще
 #define BLOCK_SAFE_RUN(block, ...) block ? block(__VA_ARGS__) : nil
 ```
 
 ### Debug Log
 
-```
+```objc
 #ifdef DEBUG
 #define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
@@ -66,27 +54,11 @@ Helpers in .pch file.
 #endif
 ```
 
-### Combinations of iOS systems
-
-```objc
-#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
-
-#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
-#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
-#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
-#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
-
-#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
-#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
-#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
-#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
-```
-
-
 ### RGB
 
 ```objc
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define RGB(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 ```
