@@ -132,6 +132,7 @@ NSUInteger static const kDTAbuseCount = 3;
 
 ## IGSNotificationKeys.h
 
+```objc
 #pragma mark - Notification Identifiers
 
 static NSString *const kDTApplicationDidBecomeActive = @"DTApplicationDidBecomeActive";
@@ -140,11 +141,10 @@ static NSString *const kRemoveUserFromChatNotification = @"RemoveUserFromChatNot
 static NSString *const kDislikeAndPlayNextVideoNotification = @"DislikeAndPlayNextVideoNotification";
 static NSString *const kPreferencesChangedNotification = @"PreferencesChangedNotification";
 static NSString *const kVideoRecordActiveNotification = @"VideoRecordActiveNotification";
-
+```
 
 ## IGSCallbacks.h
-
-/*QMContentService*/
+```objc
 typedef void (^IGSContentProgressBlock)(float progress);
 typedef void (^IGSFileUploadTaskResultBlock)(QBCFileUploadTaskResult *result);
 typedef void (^IGSFileDownloadTaskResultBlock)(QBCFileDownloadTaskResult *result);
@@ -172,10 +172,11 @@ typedef void (^QBSessionCreationBlock)(BOOL success, NSString *error);
 typedef void (^QBChatResultBlock)(BOOL success);
 typedef void (^QBChatRoomResultBlock)(QBChatRoom *chatRoom, NSError *error);
 typedef void (^QBChatDialogHistoryBlock)(NSMutableArray *chatDialogHistoryArray, NSError *error);
-
+```
 
 ## IGSSettings
 
+```objc
 #pragma mark - Settings
 
 #define boolPref(key) ([[NSUserDefaults standardUserDefaults] boolForKey:key])
@@ -183,42 +184,35 @@ typedef void (^QBChatDialogHistoryBlock)(NSMutableArray *chatDialogHistoryArray,
 
 static NSString *const kPrefLikeCount = @“igs.likes";
 static NSString *const kPrefMsgSent = @"igs.msgDidSent";
-
 static NSString *const kPrefIsSecondLaunch = @"igssecondLaunch";
-
 static NSString *const kPrefSettings = @"igs.settings";
-
 static NSString *const kPrefAbuseCount = @"igs.abuses";
-
 static NSString *const kPrefSocialType = @"igs.socialKind";
-
 static NSString *const kPrefAgeRangeMinValue = @"igs.age.min";
 static NSString *const kPrefAgeRangeMaxValue = @"igs.age.max";
-
 static NSString *const kPrefLastCountdownTime = @"igs.countdown.lastTime";
 static NSString *const kPrefCustomSearchLocation = @"igs.customsearchlocation";
 
 #endif
-
+```
 
 ## IGSSegues
 
 #pragma mark - Segue identifiers
 
+```objc
 static NSString *const kIGSSplashToTourSegue = @"SplashToTourSegue";
 static NSString *const kIGSplashToWelcomeSegue = @"SplashToWelcomeSegue";
 static NSString *const kIGSplashToTabBarSegue = @"SplashToTabBarSegue";
 
 static NSString *const kIGSTourToWelcomeSegue = @"TourToWelcomeSegue";
-
 static NSString *const kIGSWelcomeToVideoPresentationTipSegue = @"WelcomeToVideoPresentationTipSegue";
 static NSString *const kIGSWelcomeToFeedTipSegue = @"WelcomeToFeedTipSegue";
 static NSString *const kIGSWelcomeToTabBarSegue = @"WelcomeToTabBarSegue";
 
 static NSString *const kIGSFeedTipToTabBarSegue = @"FeedTipToTabBarSegue";
-
 static NSString *const kIGSVideoPresentationTipToVideoPresentationSegue = @"VideoPresentationTipToVideoPresentationSegue";
 
 //static NSString *const kDT         = @"";
-
+```
 
