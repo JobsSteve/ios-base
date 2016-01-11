@@ -269,6 +269,8 @@ n
 
 **[91. Работа с константами.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/work_with_constants.md)**
 
+[92. Облачные сервисы. Quickblox. Amazon Cloud Service. iCloud.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cloud_services.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
