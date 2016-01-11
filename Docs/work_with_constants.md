@@ -163,6 +163,8 @@ static NSString *const kVideoRecordActiveNotification = @"VideoRecordActiveNotif
 ## IGSCallbacks.h
 
 ```objc
+#pragma marks - Callbacks
+
 typedef void (^IGSContentProgressBlock)(float progress);
 typedef void (^IGSFileUploadTaskResultBlock)(QBCFileUploadTaskResult *result);
 typedef void (^IGSFileDownloadTaskResultBlock)(QBCFileDownloadTaskResult *result);
