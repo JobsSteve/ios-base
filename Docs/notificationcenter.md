@@ -19,9 +19,9 @@ BOOL isAuthorized = [[PPAuthorizationManager sharedInstance] isAuthorized];
 ```objc
 //Прием
 [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(animateWelcomeTour)
-                                                 name:kAnimateWelcomeTour
-                                               object:nil];
+                                         selector:@selector(animateWelcomeTour)
+                                             name:kAnimateWelcomeTour
+                                           object:nil];
 ```
 
 ```objc
