@@ -271,6 +271,8 @@ n
 
 [92. Облачные сервисы. Quickblox. Amazon Cloud Service. iCloud.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/cloud_services.md)
 
+[93. TableView with Custom Header.](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/custom_header.md)
+
 ### Fundamental Guides (Фундаментальные основы)
 
 [1. ООП. MVC. ](https://github.com/arthurigberdin/rg-ios-base/blob/master/Docs/oop.md)
