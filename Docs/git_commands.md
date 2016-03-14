@@ -3,6 +3,12 @@
 
 ## Git Commands
 
+### Удаляем branch
+
+```
+git branch -d fix-555
+```
+
 ### Set up your local directory.
 
 ```
