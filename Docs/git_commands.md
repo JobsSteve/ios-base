@@ -3,7 +3,7 @@
 
 ## Git Commands
 
-### Удаляем branch
+### Удаляем ветку `fix-555` локально
 
 ```
 git branch -d fix-555
